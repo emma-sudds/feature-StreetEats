@@ -4,21 +4,11 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_weddingLayout.cshtml";
 }
-
-@*<div class="hard">
-    <img src="@Model.menuFrontPage" alt="frontPage">
-</div>
-
-@foreach (var item in Model.MenuPage)
-{
-    string fileName = @item.Substring(@item.LastIndexOf('-') + 1);
-    <div>
-        <img src="@item" alt="@fileName">
-    </div>
-}*@
-<div id="canvas">
-    <div id="book-zoom">
+@*<div id="canvas">
         <div class="sample-docs">
+            <div class="hard">
+                <img src="@Model.menuFrontPage" alt="frontPage">
+            </div>
             @foreach (var item in Model.MenuPage)
             {
                 string fileName = @item.Substring(@item.LastIndexOf('-') + 1);
@@ -29,9 +19,16 @@
             <div class="hard"></div>
             <div class="hard"></div>
         </div>
-    </div>
-
-    <div id="slider-bar" class="turnjs-slider">
-        <div id="slider"></div>
+</div>*@
+<div class="t">
+    <div class="tc rel">
+        <div class="book" id="book">
+            <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/01.jpg" alt="" /></div>
+            <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/02.jpg" alt="" /></div>
+            <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/03.jpg" alt="" /></div>
+            <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/04.jpg" alt="" /></div>
+            <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/05.jpg" alt="" /></div>
+            <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/06.jpg" alt="" /></div>
+        </div>
     </div>
 </div>

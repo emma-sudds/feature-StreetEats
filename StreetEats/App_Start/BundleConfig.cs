@@ -27,8 +27,6 @@ namespace StreetEats
 
             bundles.Add(new ScriptBundle("~/bundles/flipbook").Include(
                       "~/Scripts/turnjs4/lib/turn.js",
-                      "~/Scripts/turnjs4/extras/jquery-ui-1.8.20.custom.min.js",
-                      "~/Scripts/turnjs4/lib/hash.js",
                       "~/Scripts/turnjs4/extras/jquery.mousewheel.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(

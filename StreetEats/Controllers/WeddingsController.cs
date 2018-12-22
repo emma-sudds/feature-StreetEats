@@ -35,7 +35,7 @@ namespace StreetEats.Controllers
             foreach (string file in menuPagesImageFiles)
             {
                 string fileName = Path.GetFileName(file);
-                menuPages.Add("/Content/Images/menu/pages/" + fileName);
+                menuPages.Add("/Content/images/menu/pages/" + fileName);
             }
 
             var weddingInfo = new Weddings
