@@ -1,0 +1,37 @@
+﻿@model StreetEats.Models.Weddings
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_weddingLayout.cshtml";
+}
+
+@*<div class="hard">
+    <img src="@Model.menuFrontPage" alt="frontPage">
+</div>
+
+@foreach (var item in Model.MenuPage)
+{
+    string fileName = @item.Substring(@item.LastIndexOf('-') + 1);
+    <div>
+        <img src="@item" alt="@fileName">
+    </div>
+}*@
+<div id="canvas">
+    <div id="book-zoom">
+        <div class="sample-docs">
+            @foreach (var item in Model.MenuPage)
+            {
+                string fileName = @item.Substring(@item.LastIndexOf('-') + 1);
+                <div>
+                    <img src="@item" alt="@fileName">
+                </div>
+            }
+            <div class="hard"></div>
+            <div class="hard"></div>
+        </div>
+    </div>
+
+    <div id="slider-bar" class="turnjs-slider">
+        <div id="slider"></div>
+    </div>
+</div>
