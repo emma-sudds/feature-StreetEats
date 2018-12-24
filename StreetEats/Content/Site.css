@@ -24,7 +24,7 @@ textarea {
     max-width: 280px;
 }
 .carousel-indicators  li{
-    background-color: white;
+    background-color: darkgrey;
     border: none;
     height: 15px;
     width: 15px;
@@ -39,7 +39,7 @@ textarea {
     width: 100%;
 }
 
-.carousel-inner {
+#myCarousel.carousel-inner {
     width: 100%;
     max-height: 600px !important;
 }
@@ -86,136 +86,25 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     -moz-background-size: cover;
-    background-image: url('/Content/Images/background/wedding.jpg')
+    background-image: url('/Content/Images/background/wedding.png')
 }
 body {
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-/*#canvas {
-    width: 960px;
-    height: 850px;
-    margin: 100px auto;
+#weddingCarousel {
+    margin: auto;
+    margin-top: 160px;
+    width: 38%;
 }
-#book-zoom {
-    -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    -ms-transition: -ms-transform 1s;
-    -o-transition: -o-transform 1s;
-    transition: transform 1s;
-    margin-left: 60px;
+#weddingCarousel.carousel-inner {
+    height: 700px;
 }
-.animated {
-    -webkit-transition: margin-left 0.2s ease-in-out;
-    -moz-transition: margin-left 0.2s ease-in-out;
-    -o-transition: margin-left 0.2s ease-in-out;
-    -ms-transition: margin-left 0.2s ease-in-out;
-    transition: margin-left 0.2s ease-in-out;
-}
-.sample-docs {
-    margin-top: 20px;
-}
-.sample-docs .page {
-    width: 471px;
-    height: 600px;
-    background: white;
-    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    -ms-box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    -o-box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
-.sample-docs .p2 {
-    background-position: -471px 0;
-}
-.sample-docs .p28 {
-    background: -webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
-    background-image: -webkit-linear-gradient(left, #fff 95%, #dadada 100%);
-    background-image: -moz-linear-gradient(left, #fff 95%, #dadada 100%);
-    background-image: -ms-linear-gradient(left, #fff 95%, #dadada 100%);
-    background-image: -o-linear-gradient(left, #fff 95%, #dadada 100%);
-    background-image: linear-gradient(left, #fff 95%, #dadada 100%);
-}
-.sample-docs .even .gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-position: right top;
-    background-repeat: repeat-y;
-}
-.sample-docs .odd .gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-position: left top;
-    background-repeat: repeat-y;
-}
-.sample-docs .page-wrapper {
-    -webkit-perspective: 2000px;
-    -moz-perspective: 2000px;
-    -ms-perspective: 2000px;
-    perspective: 2000px;
-}
-
-.sample-docs .loader {
-    background-image: url(../../Scripts/pics/loader.gif);
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    top: 280px;
-    left: 219px;
-}
-.sample-docs .shadow {
-    -webkit-transition: -webkit-box-shadow 0.5s;
-    -moz-transition: -moz-box-shadow 0.5s;
-    -o-transition: -webkit-box-shadow 0.5s;
-    -ms-transition: -ms-box-shadow 0.5s;
-    -webkit-box-shadow: 0 0 20px #ccc;
-    -moz-box-shadow: 0 0 20px #ccc;
-    -o-box-shadow: 0 0 20px #ccc;
-    -ms-box-shadow: 0 0 20px #ccc;
-    box-shadow: 0 0 20px #ccc;
-}*/
-.t {
-    display: table;
-    width: 100%;
-    height: 100%;
-}
-
-.tc {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.rel {
-    position: relative;
-}
-
-/* book */
-
-.book {
-    margin: 0 auto;
-    width: 90%;
-    height: 90%;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-    .book .page {
-        height: 100%;
+    #weddingCarousel .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+        right: 19px;
     }
 
-        .book .page img {
-            max-width: 100%;
-            height: 100%;
-        }
+    #weddingCarousel .glyphicon-chevron-left, .carousel-control .icon-prev {
+        left: 7.5px;
+    }
