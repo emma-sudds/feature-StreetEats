@@ -108,3 +108,6 @@ body {
     #weddingCarousel .glyphicon-chevron-left, .carousel-control .icon-prev {
         left: 7.5px;
     }
+    #sidebar{
+        float: right;
+    }

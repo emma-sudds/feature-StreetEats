@@ -10,6 +10,9 @@
 </head>
 <body class="weddingBody">
     @{ Html.RenderPartial("_HeaderNavBar");}
+    <div id="sidebar">
+        @RenderSection("SideBar", required:true)
+    </div>
     @RenderBody()
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
