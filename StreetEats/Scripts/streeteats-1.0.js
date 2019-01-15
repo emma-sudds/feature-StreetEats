@@ -31,7 +31,6 @@
         e.preventDefault();
         $form = $(this);
         var url = $(this).data('request-url');
-        var page = $(this).data('data-page');
         //show some response on the button
         $('button[type="submit"]', $form).each(function () {
             $btn = $(this);

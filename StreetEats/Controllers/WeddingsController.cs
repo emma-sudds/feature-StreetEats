@@ -67,7 +67,7 @@ namespace StreetEats.Controllers
             GmailUsername = "emmasudsey@gmail.com";
             GmailPassword = "Deadpool2019!";
             ToEmail = "emmasudds@live.co.uk";
-            Subject = "Wedding";
+            Subject = model.subject;
             Body = model.message + "<br/>" + "From: " + model.email;
             IsHtml = true;
             Send();
