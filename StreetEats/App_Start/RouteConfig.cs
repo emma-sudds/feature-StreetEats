@@ -13,15 +13,15 @@ namespace StreetEats
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapRoute(
-                name: "Weddings",
-                url: "Weddings/{id}",
-                defaults: new { controller = "Wedding", action = "Index" }
-                );
-            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "Weddings",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Wedding", action = "Index", id = UrlParameter.Optional }
+                );
         }
     }
 }

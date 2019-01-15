@@ -1,37 +1,37 @@
 ﻿$(function () {
     function after_form_submitted(data) {
-        if (data.result == 'success') {
             $('form#reused_form').hide();
             $('#success_message').show();
             $('#error_message').hide();
-        }
-        else {
-            $('#error_message').append('<ul></ul>');
+    }
 
-            jQuery.each(data.errors, function (key, val) {
-                $('#error_message ul').append('<li>' + key + ':' + val + '</li>');
-            });
-            $('#success_message').hide();
-            $('#error_message').show();
+    function errorSendingForm() {
+        $('#error_message').append('<ul></ul>');
 
-            //reverse the response on the button
-            $('button[type="button"]', $form).each(function () {
-                $btn = $(this);
-                label = $btn.prop('orig_label');
-                if (label) {
-                    $btn.prop('type', 'submit');
-                    $btn.text(label);
-                    $btn.prop('orig_label', '');
-                }
-            });
+        jQuery.each(data.errors, function (key, val) {
+            $('#error_message ul').append('<li>' + key + ':' + val + '</li>');
+        });
+        $('#success_message').hide();
+        $('#error_message').show();
 
-        }//else
+        //reverse the response on the button
+        $('button[type="button"]', $form).each(function () {
+            $btn = $(this);
+            label = $btn.prop('orig_label');
+            if (label) {
+                $btn.prop('type', 'submit');
+                $btn.text(label);
+                $btn.prop('orig_label', '');
+            }
+        });
+
     }
  
     $('#reused_form').submit(function (e) {
         e.preventDefault();
         $form = $(this);
         var url = $(this).data('request-url');
+        var page = $(this).data('data-page');
         //show some response on the button
         $('button[type="submit"]', $form).each(function () {
             $btn = $(this);
@@ -47,12 +47,7 @@
             data: $form.serialize(),
             success: after_form_submitted,
             dataType: 'json',
-            success: function (data) {
-                alert('Success ' + data);
-            },
-            error: function (req, status, error) {
-                alert("Error: " + error + ", data" + $form.serialize());
-            }
+            error: errorSendingForm
         });
 
     });

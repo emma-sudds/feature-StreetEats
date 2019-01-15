@@ -62,20 +62,21 @@ namespace StreetEats.Controllers
         }
 
         [HttpPost]
-        public ActionResult AjaxContactForm(Contact model)
+        public JsonResult AjaxContactForm(Contact model)
         {
             GmailUsername = "emmasudsey@gmail.com";
             GmailPassword = "Deadpool2019!";
             ToEmail = "emmasudds@live.co.uk";
             Subject = "Wedding";
-            Body = model.message + "<br/" + "From: " + model.email;
+            Body = model.message + "<br/>" + "From: " + model.email;
             IsHtml = true;
             Send();
-            return null;
+            return Json(model);
         }
 
         public void Send()
         {
+            GmailHost = "smtp.gmail.com";
             GmailPort = 25;
             GmailSSL = true;
             SmtpClient smtp = new SmtpClient();
