@@ -33,7 +33,8 @@ namespace StreetEats
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
                       "~/Content/jquery.ui.css",
-                      "~/Content/contact.css"));
+                      "~/Content/contact.css",
+                      "~/Content/animate.css"));
         }
     }
 }

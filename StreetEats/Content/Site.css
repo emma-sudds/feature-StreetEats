@@ -2,6 +2,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
     overflow: hidden;
+    background-color: #ebe8eb;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,27 +24,9 @@ select,
 textarea {
     max-width: 280px;
 }
-.carousel-indicators  li{
-    background-color: darkgrey;
-    border: none;
-    height: 15px;
-    width: 15px;
-}
-.carousel-indicators .active {
-    background-color: rgb(162, 53, 106);
-    border: none;
-    height: 17px;
-    width: 17px;
-}
 .tales {
     width: 100%;
 }
-
-#myCarousel.carousel-inner {
-    width: 100%;
-    max-height: 600px !important;
-}
-
 .navbar-inverse {
     background-color: rgb(162, 53, 106) !important;
     border-color: rgb(162, 53, 106) !important;
@@ -73,9 +56,6 @@ textarea {
 }
 .iconFreepik {
     margin-top: 2vh !important;
-}
-#myCarousel {
-    margin-top: 10vh;
 }
 .weddingBody {
     width: 100%;
@@ -187,4 +167,99 @@ body {
 
 .instagram p i {
     left: 35px;
+}
+@media screen and (min-width: 768px) {
+    body {
+        padding-top: 100px;
+    }
+}
+.body-content {
+    width: 100% !important;
+    height: 100%;
+}
+html, body {
+    height: 100%; /* make sure it is at least as tall as the viewport */
+}
+#myCarousel{
+    margin: 2%;
+}
+.skyblue {
+    background-color: #22c8ff;
+}
+
+.carousel-indicators {
+    bottom: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
+.item {
+    min-height: 700px;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption h3,
+.carousel .icon-container,
+.carousel-caption button {
+    background-color: #09c;
+}
+
+.carousel-caption h3 {
+    padding: .5em;
+}
+
+.carousel .icon-container {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 1em;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.carousel-caption button {
+    border-color: #00bfff;
+    margin-top: 1em;
+}
+
+/* Animation delays */
+.carousel-caption h3:first-child {
+    animation-delay: 1s;
+}
+
+.carousel-caption h3:nth-child(2) {
+    animation-delay: 2s;
+}
+.carousel-caption button {
+    animation-delay: 3s;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.p {
+    padding-top: 125px;
+    text-align: center;
+}
+.p a {
+    text-decoration: underline;
+}
+.firstSlide {
+    background: url('/Content/images/slides/wedding.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#indexCarousel {
+    margin: 2%;
+    -webkit-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
+    -moz-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
+    box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
 }
