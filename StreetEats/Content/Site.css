@@ -95,11 +95,11 @@ body {
     text-align: center;
     line-height: 3;
 }
-    #socialsidebar > div > a > p {
-        color: white;
-        position: relative;
-        left: -10px;
-    }
+#socialsidebar > div > a > p {
+    color: white;
+    position: relative;
+    left: -10px;
+}
 #socialsidebar {
     height: 250px;
     width: 10px;
@@ -109,6 +109,7 @@ body {
     margin-left: 10px;
     left: 0;
     margin-top: 4vh;
+    top: 42%;
 }
 #socialsidebar > div > a > p > i {
     left: 30px;
@@ -184,7 +185,7 @@ html, body {
     margin: 2%;
 }
 .skyblue {
-    background-color: #22c8ff;
+    background-color: #ebe8eb;
 }
 
 .carousel-indicators {
@@ -205,7 +206,7 @@ html, body {
 .carousel-caption h3,
 .carousel .icon-container,
 .carousel-caption button {
-    background-color: #09c;
+    background-color: rgb(162, 53, 106);
 }
 
 .carousel-caption h3 {
@@ -222,7 +223,8 @@ html, body {
 }
 
 .carousel-caption button {
-    border-color: #00bfff;
+    background-color: #a2356a;
+    border-color: #872c58;
     margin-top: 1em;
 }
 
@@ -257,9 +259,30 @@ h1 {
     -o-background-size: cover;
     background-size: cover;
 }
+.secondSlide {
+    background: url('/Content/images/slides/corporate.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.thirdSlide {
+    background: url('/Content/images/slides/market.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 #indexCarousel {
-    margin: 2%;
+    margin: 6%;
     -webkit-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
     -moz-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
     box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
+}
+.btn-info {
+    background-color: #a2356a!important;
+    border-color: #872c58!important;
+}
+.container-box{
+    top: 45%!important;
 }
