@@ -73,7 +73,7 @@ body {
 }
 #weddingCarousel {
     margin: auto;
-    margin-top: 160px;
+    margin-top: 100px;
     width: 38%;
 }
 #weddingCarousel.carousel-inner {
@@ -316,4 +316,7 @@ ul.nav {
 }
 .navbar-nav{
     padding-left: 9%!important;
+}
+#weddingCarousel > .carousel-inner{
+    margin-left: 23%;
 }
