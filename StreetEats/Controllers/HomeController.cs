@@ -17,6 +17,8 @@ namespace StreetEats.Controllers
             string logoFilePath = "";
             string[] sliderFiles = Directory.GetFiles("C:\\Users\\HazeyOrion\\Documents\\StreetEats\\StreetEats\\StreetEats\\Content\\Images\\Slides");
             string[] logoFile = Directory.GetFiles("C:\\Users\\HazeyOrion\\Documents\\StreetEats\\StreetEats\\StreetEats\\Content\\Images\\logo");
+            string hireUsTitle = System.Configuration.ConfigurationManager.AppSettings["hireUsTitle"].ToString();
+            string [] hireUsText = System.Configuration.ConfigurationManager.AppSettings["hireUsText"].Split('|').ToArray();
             foreach (string file in sliderFiles) {
                 string fileName = Path.GetFileName(file);
                 filePath.Add("/Content/Images/Slides/" + fileName);
@@ -29,7 +31,9 @@ namespace StreetEats.Controllers
 
             var indexImages = new Home {
                 FilePath = filePath,
-                logoFilePath = logoFilePath
+                logoFilePath = logoFilePath,
+                hireUsTitle = hireUsTitle,
+                hireUsText = hireUsText
             };
             return View(indexImages);
         }

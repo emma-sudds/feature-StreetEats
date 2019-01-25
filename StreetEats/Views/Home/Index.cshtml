@@ -6,7 +6,13 @@
 }
 <div id="StreetEatsInfo">
     <h1>StreetEats</h1>
-    <h3>Catering with real food for those real moments</h3>
+</div>
+<div id="hireUs">
+    <h1>@Model.hireUsTitle</h1>
+    @foreach (var item in Model.hireUsText)
+    {
+        <p>@item</p>
+    }
 </div>
 <div id = "indexCarousel">
     <!-- carousel code -->
@@ -27,7 +33,7 @@
                     <h3 data-animation="animated bounceInUp">
                         Weddings
                     </h3>
-                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Gallery</button>
+                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Find Out More</button>
                 </div>
             </div>
 
@@ -40,7 +46,7 @@
                     <h3 data-animation="animated bounceInUp">
                         Corporate
                     </h3>
-                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Gallery</button>
+                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Find Out More</button>
                 </div>
             </div>
 
@@ -53,7 +59,7 @@
                     <h3 data-animation="animated bounceInUp">
                         Market
                     </h3>
-                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Gallery</button>
+                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Find Out More</button>
                 </div>
             </div>
         </div>

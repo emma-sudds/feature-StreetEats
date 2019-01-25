@@ -1,0 +1,39 @@
+﻿@model StreetEats.Models.About
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="AboutStreetEatsTitle">
+    <h1>About StreetEats</h1>
+</div>
+<div id="AboutStreetEatsContent" class="container">
+    <div class="row">
+        <div class="col-lg-6">
+                Our food is always colourful and vibrant, rammed full of flavour. If you want beige food, go to Greggs,
+                if you want food that packs a punch, come see us. We love doing weddings, showing off our repertoire, our Vietnamese spring
+                rolls canapes, or bowls of steaming laksa, buns filled with sticky pulled pork and chilli slaw
+        </div>
+        <div class="col-lg-6"><img src="@Model.ourFood" id="ourFood"/>
+        </div>
+    </div>
+    @*<div class="row">
+            <div class="col-md-8"><p>Our food is always colourful and vibrant, rammed full of flavour. If you want beige food, go to Greggs,
+                if you want food that packs a punch, come see us. We love doing weddings, showing off our repertoire, our Vietnamese spring
+                rolls canapes, or bowls of steaming laksa, buns filled with sticky pulled pork and chilli slaw</p></div>
+            <div class="col-md-8"><img src="@Model.ourFood" /><p>Hello</p></div>
+        </div>*@
+    @*<div id="whyStart" class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>
+        <div id="mobileCatering" class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>
+        <div id="achievements" class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>*@
+</div>
