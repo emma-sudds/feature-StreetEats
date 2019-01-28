@@ -13,10 +13,16 @@ namespace StreetEats.Controllers
         // GET: About
         public ActionResult Index()
         {
-            string aboutTheFood = "/Content/Images/about/ourFood.JPG";
+            string aboutTheFood1 = "/Content/Images/about/ourFood.JPG";
+            string aboutTheFood2 = "/Content/Images/about/ourFood2.JPG";
+            string aboutTheFood3 = "/Content/Images/about/ourFood3.JPG";
+            string aboutTheFood4 = "/Content/Images/about/ourFood4.JPG";
             var aboutFood = new About
             {
-                ourFood = aboutTheFood
+                ourFood1 = aboutTheFood1,
+                ourFood2 = aboutTheFood2,
+                ourFood3 = aboutTheFood3,
+                ourFood4 = aboutTheFood4
             };
             return View(aboutFood);
         }

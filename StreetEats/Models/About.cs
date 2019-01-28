@@ -7,6 +7,9 @@ namespace StreetEats.Models
 {
     public class About
     {
-        public string ourFood { get; set; }
+        public string ourFood1 { get; set; }
+        public string ourFood2 { get; set; }
+        public string ourFood3 { get; set; }
+        public string ourFood4 { get; set; }
     }
 }
