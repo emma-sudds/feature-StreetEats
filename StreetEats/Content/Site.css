@@ -1,9 +1,11 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    overflow: hidden;
+    overflow-y: auto;
     background: url(/Content/images/background/cream_dust.png) repeat 0 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -66,11 +68,6 @@ textarea {
     background-size: cover;
     -moz-background-size: cover;
     background-image: url('/Content/Images/background/wedding.png')
-}
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 #weddingCarousel {
     margin: auto;
@@ -186,7 +183,7 @@ html, body {
     margin: 2%;
 }
 .skyblue {
-    background-color: #ebe8eb;
+    background-color: #white;
 }
 
 .carousel-indicators {
@@ -254,23 +251,16 @@ h1 {
     text-decoration: underline;
 }
 .firstSlide {
-    background: url('/Content/images/slides/wedding.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url('/Content/images/slides/wedding.jpg');
+    background-repeat: no-repeat;
 }
 .secondSlide {
     background: url('/Content/images/slides/corporate.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
 }
 .thirdSlide {
-    background: url('/Content/images/slides/market.jpg') no-repeat center center fixed;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    background: url('/Content/images/slides/market.jpg');
+    background-repeat: no-repeat;
 }
 #indexCarousel {
     margin-right: 6%;
@@ -292,14 +282,14 @@ h1 {
     padding: 0.5%;
     width: 40%;
 }
-#StreetEatsInfo > h1, #StreetEatsInfo > h3, #AboutStreetEatsTitle > h1{
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-}
+    #StreetEatsInfo > h1, #StreetEatsInfo > h3, #AboutStreetEatsTitle > h1 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
 #hireUs {
     float: left;
     width: 17vw;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding-left: 2vw;
     padding-right: 2vw;
     margin-right: 2vw;
@@ -337,7 +327,8 @@ ul.nav {
 }
 #AboutStreetEatsContent {
     text-align: center;
-    width: 70%;
+    width: 78%;
+    margin-bottom: 19px;
 }
 #AboutStreetEatsContent > .row {
     -webkit-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
@@ -345,40 +336,47 @@ ul.nav {
     box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
 }
 #AboutFoodDescrip{
-    padding: 2%;
+    font-size: 20px;
+    padding: 13px;
 }
-.limit1 {
-    width: 255px;
-    height: 203px;
-    max-height: 203px;
-    overflow: hidden;
-}
-
-.limit2 {
-    width: 255px;
-    height: 170px;
-    max-height: 170px;
-    overflow: hidden;
-}
-.limit3 {
-    width: 255px;
-    height: 255px;
-    max-height: 255px;
-    overflow: hidden;
-}
-.limit4 {
-    width: 255px;
-    height: 273px;
-    max-height: 255px;
-    overflow: hidden;
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
-.limit1 img, .limit2 img, .limit3 img, .limit4 img {
-    width: 100%;
-    height: 100%;
-    padding: 2%;
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
 }
-.col-lg-6{
-    padding-left: 0px;
-    padding-right: 0px;
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+.bottomImg{
+    margin-bottom: 2%;
 }
