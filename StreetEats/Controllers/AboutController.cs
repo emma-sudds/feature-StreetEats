@@ -23,6 +23,7 @@ namespace StreetEats.Controllers
             string business4 = "/Content/Images/business/business4.JPG";
             string business5 = "/Content/Images/business/business5.JPG";
             string business6 = "/Content/Images/business/business6.JPG";
+            string face = "/Content/Images/business/face.png";
             var aboutFood = new About
             {
                 ourFood1 = aboutTheFood1,
@@ -34,7 +35,8 @@ namespace StreetEats.Controllers
                 business3 = business3,
                 business4 = business4,
                 business5 = business5,
-                business6 = business6
+                business6 = business6,
+                face = face
             };
             return View(aboutFood);
         }

@@ -282,10 +282,16 @@ h1 {
     padding: 0.5%;
     width: 40%;
 }
-    #StreetEatsInfo > h1, #StreetEatsInfo > h3, #AboutStreetEatsTitle > h1 {
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-    }
+#StreetEatsInfo > h1, #StreetEatsInfo > h3, #AboutStreetEatsTitle > h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+#AboutStreetEatsTitle {
+    position: fixed;
+    left: 30px;
+    margin-right: 10px;
+    color: #a2356a;
+}
 #hireUs {
     float: left;
     width: 17vw;
@@ -379,4 +385,23 @@ ul.nav {
 }
 .bottomImg{
     margin-bottom: 2%;
+}
+#face {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#faceDescription {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 17px;
+}
+.topContainer{
+    margin-top: 26px;
 }

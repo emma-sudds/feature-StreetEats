@@ -17,5 +17,6 @@ namespace StreetEats.Models
         public string business4 { get; set; }
         public string business5 { get; set; }
         public string business6 { get; set; }
+        public string face { get; set; }
     }
 }
