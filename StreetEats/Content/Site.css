@@ -383,7 +383,7 @@ ul.nav {
         max-width: 100%;
     }
 }
-.bottomImg{
+.column > img:last-child {
     margin-bottom: 2%;
 }
 #face {

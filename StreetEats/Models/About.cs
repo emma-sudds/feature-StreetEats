@@ -7,16 +7,12 @@ namespace StreetEats.Models
 {
     public class About
     {
-        public string ourFood1 { get; set; }
-        public string ourFood2 { get; set; }
-        public string ourFood3 { get; set; }
-        public string ourFood4 { get; set; }
-        public string business1 { get; set; }
-        public string business2 { get; set; }
-        public string business3 { get; set; }
-        public string business4 { get; set; }
-        public string business5 { get; set; }
-        public string business6 { get; set; }
+        public List<string> ourFoodCol1 { get; set; }
+        public List<string> ourFoodCol2 { get; set; }
+        public List<string> business1 { get; set; }
+        public List<string> business2 { get; set; }
+        public List<string> awards1 { get; set; }
+        public List<string> awards2 { get; set; }
         public string face { get; set; }
     }
 }

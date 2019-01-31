@@ -22,12 +22,16 @@
                 </div>
             </div>
             <div class="column">
-                <img src="@Model.ourFood1" style="width:100%" />
-                <img src="@Model.ourFood4" style="width:100%" class="bottomImg" />
+                @foreach (var fileName in Model.ourFoodCol1)
+                {
+                    <img src="@fileName" style="width:100%" />
+                }
             </div>
             <div class="column">
-                <img src="@Model.ourFood3" style="width:100%" />
-                <img src="@Model.ourFood2" style="width:100%" class="bottomImg" />
+                @foreach (var fileName in Model.ourFoodCol2)
+                {
+                    <img src="@fileName" style="width:100%" />
+                }
             </div>
         </div>
     </div>
@@ -47,14 +51,42 @@
                 </div>
             </div>
             <div class="column">
-                <img src="@Model.business1" style="width:100%" />
-                <img src="@Model.business4" style="width:100%" />
-                <img src="@Model.business5" style="width:100%" class="bottomImg" />
+                @foreach (var fileName in Model.business1)
+                {
+                    <img src="@fileName" style="width:100%" />
+                }
             </div>
             <div class="column">
-                <img src="@Model.business3" style="width:100%" />
-                <img src="@Model.business6" style="width:100%" class="bottomImg" />
-                <img src="@Model.business2" style="width:100%" class="bottomImg" />
+                @foreach (var fileName in Model.business2)
+                {
+                    <img src="@fileName" style="width:100%" />
+                }
+            </div>
+        </div>
+    </div>
+
+    <div id="AboutStreetEatsContent" class="container">
+        <div class="row">
+            <div class="column">
+                <h3><b>We've won awards</b></h3>
+                <div id="AboutFoodDescrip">
+                    <p>Did you know StreetEats used to be a cafe in Hammersmith?</p>
+                    <p>Not just that but we won awards!</p>
+                    <p>We were 3 times winner of Best Cafe in Hammersmith (I Love Lunch) in 2016, 2017, 2018.</p>
+                    <p>We were also 2 times runner up best place to eat Fulham/Hammersmith/Shepherds Bush (H&F Brilliant Business Awards) in 2016 and 2018.</p>
+                </div>
+            </div>
+            <div class="column">
+                @foreach (var fileName in Model.awards1)
+                {
+                    <img src="@fileName" style="width:100%" />
+                }
+            </div>
+            <div class="column">
+                @foreach (var fileName in Model.awards2)
+                {
+                    <img src="@fileName" style="width:100%" />
+                }
             </div>
         </div>
     </div>
