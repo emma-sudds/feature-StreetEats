@@ -13,6 +13,8 @@
     {
         <p>@item</p>
     }
+    <h1>@Model.wannaKnowMoreTitle</h1>
+    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("About Us", "Index", "About", null, new { id = "aboutLink" }) </button>
 </div>
 <div id = "indexCarousel">
     <!-- carousel code -->
@@ -33,7 +35,7 @@
                     <h3 data-animation="animated bounceInUp">
                         Weddings
                     </h3>
-                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Find Out More</button>
+                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">@Html.ActionLink("Find Out More", "Index", "Weddings",  null, new { id = "weddingLink" }) </button>
                 </div>
             </div>
 
@@ -46,7 +48,7 @@
                     <h3 data-animation="animated bounceInUp">
                         Corporate
                     </h3>
-                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Find Out More</button>
+                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">@Html.ActionLink("Find Out More", "Index", "Corporate", null, new { id = "corporateLink" }) </button>
                 </div>
             </div>
 
@@ -59,7 +61,7 @@
                     <h3 data-animation="animated bounceInUp">
                         Market
                     </h3>
-                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Find Out More</button>
+                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">@Html.ActionLink("Find Out More", "Index", "Market", null, new { id = "marketLink" })</button>
                 </div>
             </div>
         </div>
