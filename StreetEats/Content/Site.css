@@ -50,7 +50,7 @@ textarea {
     margin: 0 auto;
 }
 .nav > li > a > img {
-    height: 3.5vh !important;
+    height: 3.8vh !important;
     width: 2.5vw !important;
 }
 .glyphicon-home, .glyphicon-info-sign, .glyphicon-envelope {
@@ -325,9 +325,6 @@ ul.nav {
 .nav > li > a > img {
     display: inline-block;
 }
-.navbar-nav{
-    padding-left: 9%!important;
-}
 #weddingCarousel > .carousel-inner{
     margin-left: 23%;
 }
@@ -481,3 +478,9 @@ ul.nav {
         margin-left: 13px;
         left: 100%;
     }
+.navText {
+    color: rgb(248, 238, 65);
+}
+.navbar-collapse{
+    width: 890px;
+}
