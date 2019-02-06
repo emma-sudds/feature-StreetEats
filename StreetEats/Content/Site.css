@@ -10,8 +10,7 @@
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 9%;
-    padding-right: 15%;
+    padding-left: 5%;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -263,8 +262,6 @@ h1 {
     background-repeat: no-repeat;
 }
 #indexCarousel {
-    margin-right: 6%;
-    margin-left: 6%;
     -webkit-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
     -moz-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
     box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
@@ -293,22 +290,24 @@ h1 {
     margin-right: 10px;
     color: #a2356a;
 }
-#hireUs {
-    float: left;
-    width: 17vw;
+#hireUs, #testimonies {
     font-family: 'Poppins', sans-serif;
     padding-left: 2vw;
     padding-right: 2vw;
+    padding-top: 1vh;
     margin-right: 2vw;
     -webkit-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
     -moz-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
     box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
-    font-size: 17px;
+    font-size: 18px;
     background: url(/Content/images/background/cream_dust.png) repeat 0 0;
 }
-#hireUs > h1{
-    text-align:left;
+#testimonies {
+    margin-left: 2vw;
 }
+#hireUs > p, #hireUs > h3, testimonies > p, testimonies > h3 {
+        word-break: break-word;
+    }
 ul.nav {
     width: 100%;
     margin: 0 auto;
@@ -353,7 +352,25 @@ ul.nav {
     flex-wrap: wrap;
     padding: 0 4px;
 }
-
+.homeRow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+.homeColumn {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+}
+.homeMiddle {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+}
+.homeColumn > div, .homeMiddle > div{
+    height: 700px
+}
 /* Create four equal columns that sits next to each other */
 .column {
     -ms-flex: 33%; /* IE10 */
@@ -398,8 +415,6 @@ ul.nav {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    height: 200px;
     text-align: center;
     font-size: 17px;
 }
@@ -425,9 +440,44 @@ ul.nav {
     height: 18px;
     margin: 7px;
 }
-#aboutLink, #aboutUsButton {
+#aboutLink, #aboutUsButton, #testimoniesLink {
     background-color: #a2356a;
     border-color: #872c58;
     color: #fff;
     text-decoration: none;
 }
+#testimonies > p{
+    border-radius: 3px;
+    position: relative; /*  <--- */
+    font-style: italic;
+    text-align: center;
+    padding: 0.3rem 1.2rem;
+    width: 90%; /* create space for the quotes */
+    color: #4a4a4a;
+    margin: 1rem auto 2rem;
+    color: #4a4a4a;
+    background: #E8E8E8;
+    font-size: 15px;
+}
+    /* -- create the quotation marks -- */
+    #testimonies >p:before,
+    #testimonies >p:after {
+        font-family: FontAwesome;
+        position: absolute;
+        /* -- inside the relative position of blockquote -- */
+        top: 13px;
+        color: #E8E8E8;
+        font-size: 34px;
+    }
+
+    #testimonies > p:before {
+        content: "\f10d";
+        margin-right: 13px;
+        right: 100%;
+    }
+
+    #testimonies > p:after {
+        content: "\f10e";
+        margin-left: 13px;
+        left: 100%;
+    }

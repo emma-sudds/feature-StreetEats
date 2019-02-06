@@ -12,5 +12,7 @@ namespace StreetEats.Models
         public string hireUsTitle { get; set; }
         public string wannaKnowMoreTitle { get; set; }
         public string[] hireUsText { get; set; }
+        public string homeThirdColumn { get; set; }
+        public string[] testimonyText { get; set; }
     }
 }

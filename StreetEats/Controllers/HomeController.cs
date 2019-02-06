@@ -20,10 +20,14 @@ namespace StreetEats.Controllers
             string hireUsTitle = System.Configuration.ConfigurationManager.AppSettings["hireUsTitle"].ToString();
             string [] hireUsText = System.Configuration.ConfigurationManager.AppSettings["hireUsText"].Split('|').ToArray();
             string wannaKnowMoreTitle = System.Configuration.ConfigurationManager.AppSettings["wannaKnowMoreTitle"].ToString();
+            string homeThirdColumn = System.Configuration.ConfigurationManager.AppSettings["homeThirdColumn"].ToString();
+            string[] testimonyText = System.Configuration.ConfigurationManager.AppSettings["testimonyText"].Split('|').ToArray();
+
             foreach (string file in sliderFiles) {
                 string fileName = Path.GetFileName(file);
                 filePath.Add("/Content/Images/Slides/" + fileName);
             }
+
             foreach (string file in logoFile)
             {
                 string fileName = Path.GetFileName(file);
@@ -35,7 +39,9 @@ namespace StreetEats.Controllers
                 logoFilePath = logoFilePath,
                 hireUsTitle = hireUsTitle,
                 hireUsText = hireUsText,
-                wannaKnowMoreTitle = wannaKnowMoreTitle
+                wannaKnowMoreTitle = wannaKnowMoreTitle,
+                homeThirdColumn = homeThirdColumn,
+                testimonyText = testimonyText
             };
             return View(indexImages);
         }

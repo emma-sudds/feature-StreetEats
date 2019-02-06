@@ -7,76 +7,97 @@
 <div id="StreetEatsInfo">
     <h1>StreetEats</h1>
 </div>
-<div id="hireUs">
-    <h1>@Model.hireUsTitle</h1>
-    @foreach (var item in Model.hireUsText)
-    {
-        <p>@item</p>
-    }
-    <h1>@Model.wannaKnowMoreTitle</h1>
-    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("About Us", "Index", "About", null, new { id = "aboutLink" }) </button>
-</div>
-<div id = "indexCarousel">
-    <!-- carousel code -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-interval="6000">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner skyblue">
-
-            <!-- first slide -->
-            <div class="item active skyblue firstSlide">
-                <div class="carousel-caption d-md-block">
-                    <h3 class="icon-container" data-animation="animated bounceInDown">
-                        <span class="fa fa-heart"></span>
-                    </h3>
-                    <h3 data-animation="animated bounceInUp">
-                        Weddings
-                    </h3>
-                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">@Html.ActionLink("Find Out More", "Index", "Weddings",  null, new { id = "weddingLink" }) </button>
-                </div>
-            </div>
-
-            <!-- second slide -->
-            <div class="item skyblue secondSlide">
-                <div class="carousel-caption d-md-block">
-                    <h3 class="icon-container" data-animation="animated bounceInDown">
-                        <span class="fa fa-building"></span>
-                    </h3>
-                    <h3 data-animation="animated bounceInUp">
-                        Corporate
-                    </h3>
-                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">@Html.ActionLink("Find Out More", "Index", "Corporate", null, new { id = "corporateLink" }) </button>
-                </div>
-            </div>
-
-            <!-- third slide -->
-            <div class="item skyblue thirdSlide">
-                <div class="carousel-caption d-md-block">
-                    <h3 class="icon-container" data-animation="animated zoomInLeft">
-                        <span class="fa fa-cutlery"></span>
-                    </h3>
-                    <h3 data-animation="animated bounceInUp">
-                        Market
-                    </h3>
-                    <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">@Html.ActionLink("Find Out More", "Index", "Market", null, new { id = "marketLink" })</button>
-                </div>
+<div class="homeRow">
+    <div class="homeColumn">
+        <div id="hireUs">
+            <h3>@Model.hireUsTitle</h3>
+            @foreach (var item in Model.hireUsText)
+            {
+                <p>@item</p>
+            }
+            <h3>@Model.wannaKnowMoreTitle</h3>
+            <div class="text-center">
+                <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("About Us", "Index", "About", null, new { id = "aboutLink" }) </button>
             </div>
         </div>
-
-        <!-- controls -->
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
+    <div class="homeMiddle">
+        <div id="indexCarousel">
+            <!-- carousel code -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-interval="6000">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner skyblue">
 
+                    <!-- first slide -->
+                    <div class="item active skyblue firstSlide">
+                        <div class="carousel-caption d-md-block">
+                            <h3 class="icon-container" data-animation="animated bounceInDown">
+                                <span class="fa fa-heart"></span>
+                            </h3>
+                            <h3 data-animation="animated bounceInUp">
+                                Weddings
+                            </h3>
+                            <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">@Html.ActionLink("Find Out More", "Index", "Weddings", null, new { id = "weddingLink" }) </button>
+                        </div>
+                    </div>
+
+                    <!-- second slide -->
+                    <div class="item skyblue secondSlide">
+                        <div class="carousel-caption d-md-block">
+                            <h3 class="icon-container" data-animation="animated bounceInDown">
+                                <span class="fa fa-building"></span>
+                            </h3>
+                            <h3 data-animation="animated bounceInUp">
+                                Corporate
+                            </h3>
+                            <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">@Html.ActionLink("Find Out More", "Index", "Corporate", null, new { id = "corporateLink" }) </button>
+                        </div>
+                    </div>
+
+                    <!-- third slide -->
+                    <div class="item skyblue thirdSlide">
+                        <div class="carousel-caption d-md-block">
+                            <h3 class="icon-container" data-animation="animated zoomInLeft">
+                                <span class="fa fa-cutlery"></span>
+                            </h3>
+                            <h3 data-animation="animated bounceInUp">
+                                Market
+                            </h3>
+                            <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">@Html.ActionLink("Find Out More", "Index", "Market", null, new { id = "marketLink" })</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- controls -->
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="homeColumn">
+        <div id="testimonies">
+            <h3>@Model.homeThirdColumn</h3>
+
+            @foreach (var item in Model.testimonyText)
+            {
+                <p>@item</p>
+            }
+            <div class="text-center">
+                <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("Read More", "Index", "Tesimonies", null, new { id = "testimoniesLink" }) </button>
+            </div>
+        </div>
+    </div>
 </div>
 @*<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 <div>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*@
