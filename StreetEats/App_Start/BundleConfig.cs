@@ -23,7 +23,8 @@ namespace StreetEats
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/streeteats").Include(
-                      "~/Scripts/streeteats-1.0.js"));
+                      "~/Scripts/streeteats-1.0.js",
+                      "~/Scripts/baguetteBox.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/flipbook").Include(
                       "~/Scripts/turnjs4/lib/turn.js",
@@ -34,7 +35,9 @@ namespace StreetEats
                       "~/Content/site.css",
                       "~/Content/jquery.ui.css",
                       "~/Content/contact.css",
-                      "~/Content/animate.css"));
+                      "~/Content/animate.css",
+                      "~/Content/fluid-gallery.css",
+                      "~/Content/baguetteBox.min.css"));
         }
     }
 }

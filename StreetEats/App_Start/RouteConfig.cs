@@ -27,6 +27,11 @@ namespace StreetEats
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "About", action = "Index", id = UrlParameter.Optional }
                 );
+            routes.MapRoute(
+                name: "Gallery",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Gallery", action = "Index", id = UrlParameter.Optional }
+                );
         }
     }
 }

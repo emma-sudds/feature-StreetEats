@@ -280,11 +280,11 @@ h1 {
     width: 40%;
     color:#a2356a;
 }
-#StreetEatsInfo > h1, #StreetEatsInfo > h3, #AboutStreetEatsTitle > h1 {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-}
-#AboutStreetEatsTitle {
+    #StreetEatsInfo > h1, #StreetEatsInfo > h3, .pageTitles > h1 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+.pageTitles {
     position: fixed;
     left: 30px;
     margin-right: 10px;
@@ -328,12 +328,12 @@ ul.nav {
 #weddingCarousel > .carousel-inner{
     margin-left: 23%;
 }
-#AboutStreetEatsContent {
+.topContainer {
     text-align: center;
     width: 78%;
     margin-bottom: 19px;
 }
-#AboutStreetEatsContent > .row {
+#AboutStreetEatsContent > .row, .topContainer > .tz-gallery > .row {
     -webkit-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
     -moz-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
     box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
