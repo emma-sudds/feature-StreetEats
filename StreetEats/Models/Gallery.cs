@@ -13,5 +13,6 @@ namespace StreetEats.Models
         public List<string> eventPictures { get; set; }
         public List<string> corporatePictures { get; set; }
         public List<string> generalPictures { get; set; }
+        public List<string> galleryCategories { get; set; }
     }
 }

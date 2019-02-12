@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.IO;
 using StreetEats.Models;
+using System.Configuration;
 
 namespace StreetEats.Controllers
 {
@@ -20,6 +21,7 @@ namespace StreetEats.Controllers
             List<string> eventPictures = new List<string>();
             List<string> corporatePictures = new List<string>();
             List<string> generalPictures = new List<string>();
+            List<string> galleryCategories = ConfigurationManager.AppSettings["galleryCategories"].Split('|').ToList();
 
             int fileCount = Directory.GetFiles(Server.MapPath(allPicturesLocation), "*", SearchOption.TopDirectoryOnly).Length;
             int currentFileCount = 1;
@@ -60,7 +62,6 @@ namespace StreetEats.Controllers
                     {
                         generalPictures.Add(foodUrl);
                     }
-
                 }
             }
 
@@ -71,7 +72,8 @@ namespace StreetEats.Controllers
                 marketPictures = marketPictures,
                 eventPictures = eventPictures,
                 corporatePictures = corporatePictures,
-                generalPictures = generalPictures
+                generalPictures = generalPictures,
+                galleryCategories = galleryCategories
             };
 
             return View(foodPicturesUrls);
