@@ -24,45 +24,48 @@ namespace StreetEats.Controllers
             List<string> galleryCategories = ConfigurationManager.AppSettings["galleryCategories"].Split('|').ToList();
 
             int fileCount = Directory.GetFiles(Server.MapPath(allPicturesLocation), "*", SearchOption.TopDirectoryOnly).Length;
-            int currentFileCount = 1;
 
-            foreach (string allPics in Directory.GetFiles(Server.MapPath(allPicturesLocation)))
+            for (int currentFileCount = 1; currentFileCount <= fileCount; currentFileCount++)
             {
-                if (allPics.IndexOf('_') > 0)
+                foreach (string allPics in Directory.GetFiles(Server.MapPath(allPicturesLocation)))
                 {
-                    string allPicFileName = Path.GetFileName(allPics);
-                    string[] picCategoryValueSplit = allPicFileName.Split('_');
-                    int picNumber = Convert.ToInt32(picCategoryValueSplit[0]);
-                    string picCategoryValue = picCategoryValueSplit[1];
-                    string foodUrl = allPicturesLocation + "/" + allPicFileName;
+                    if (allPics.IndexOf('_') > 0)
+                    {
+                        string allPicFileName = Path.GetFileName(allPics);
+                        string[] picCategoryValueSplit = allPicFileName.Split('_');
+                        int picNumber = Convert.ToInt32(picCategoryValueSplit[0]);
+                        string picCategoryValue = picCategoryValueSplit[1];
+                        string foodUrl = allPicturesLocation + "/" + allPicFileName;
 
-                    if (picNumber == currentFileCount && picNumber <= fileCount)
-                    {
-                        allPictures.Add(foodUrl);
-                        currentFileCount++;
-                    }
+                        if (picNumber == currentFileCount)
+                        {
+                            allPictures.Add(foodUrl);
 
-                    if (picCategoryValue == "food")
-                    {
-                        foodPictures.Add(foodUrl);
-                    }
-                    else if (picCategoryValue == "market")
-                    {
-                        marketPictures.Add(foodUrl);
-                    }
-                    else if (picCategoryValue == "event")
-                    {
-                        eventPictures.Add(foodUrl);
-                    }
-                    else if (picCategoryValue == "corporate")
-                    {
-                        corporatePictures.Add(foodUrl);
-                    }
-                    else if (picCategoryValue == "general")
-                    {
-                        generalPictures.Add(foodUrl);
+                            if (picCategoryValue == "food")
+                            {
+                                foodPictures.Add(foodUrl);
+                            }
+                            else if (picCategoryValue == "market")
+                            {
+                                marketPictures.Add(foodUrl);
+                            }
+                            else if (picCategoryValue == "event")
+                            {
+                                eventPictures.Add(foodUrl);
+                            }
+                            else if (picCategoryValue == "corporate")
+                            {
+                                corporatePictures.Add(foodUrl);
+                            }
+                            else if (picCategoryValue == "general")
+                            {
+                                generalPictures.Add(foodUrl);
+                            }
+                        }
+
                     }
                 }
+
             }
 
             var foodPicturesUrls = new Gallery

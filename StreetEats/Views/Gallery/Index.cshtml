@@ -10,12 +10,17 @@
 </div>
 
 <section class="gallerySection">
-    <div class="row">
+    <div class="row galleryNavRow">
         <!-- Grid column -->
         <div class="col-md-12 d-flex justify-content-center mb-5 galleryNav">
             @foreach (var category in Model.galleryCategories)
             {
-                <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="@category">@category</button>
+                string selectedClass = "";
+                if (@category == "all")
+                {
+                    selectedClass = "filtered";
+                }
+                <button type="button" class="btn btn-outline-black waves-effect filter @selectedClass" data-rel="@category">@category</button>
             }
 
         </div>

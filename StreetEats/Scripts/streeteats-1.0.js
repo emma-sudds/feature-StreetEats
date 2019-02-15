@@ -1,6 +1,8 @@
 ﻿$(function () {
     var selectedClass = "";
     $(".filter").click(function () {
+        $(".filter").removeClass("filtered");
+        $(this).addClass("filtered");
         selectedClass = $(this).attr("data-rel");
         $("#gallery").fadeTo(100, 0.1);
         $(".tz-gallery > .row >.col-sm-6").not("." + selectedClass).css("display", "none");
@@ -9,7 +11,6 @@
             $("#gallery").fadeTo(300, 1);
         }, 300);
     });
-
     $(".col-sm-6.col-md-4").not(".all").css("display", "none");
     baguetteBox.run('.tz-gallery');
     function doAnimations(elems) {

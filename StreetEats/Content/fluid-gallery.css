@@ -13,7 +13,6 @@
     padding: 40px;
 }
 
-/* Override bootstrap column paddings */
 .tz-gallery .row > div {
     padding: 7px;
 }
