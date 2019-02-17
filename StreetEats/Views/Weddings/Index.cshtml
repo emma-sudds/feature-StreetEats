@@ -1,4 +1,4 @@
-﻿@model StreetEats.Models.Weddings
+﻿@model List<StreetEats.Models.Weddings>
 
 @{
     ViewBag.Title = "Index";
@@ -13,19 +13,20 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item active">
-            @{
-                string originalFileName = Model.menuFrontPage;
-                string fileName = originalFileName.Substring(originalFileName.LastIndexOf('-') + 1);
-                <img src="@originalFileName" alt="@fileName" class="img-responsive">
-            }
-        </div>
-        @foreach (var item in Model.MenuPage)
+    <div class="carousel-inner weddingCarouselInner">
+        @foreach (var item in Model)
         {
-            string pageName = @item.Substring(@item.LastIndexOf('-') + 1);
-            <div class="item">
-                <img src="@item" alt="@pageName" class="img-responsive">
+            string activeClass = "";
+            if (@item.startingPage == "true")
+            {
+                activeClass = "active";
+            }
+            <div class="item weddingMenu @activeClass">
+                <h1 class="weddingMenu">@item.header</h1>
+                @foreach (var food in item.fileLocations)
+                {
+                    <img src ="@food" class="weddingMenuPics"/>
+                }
             </div>
         }
     </div>

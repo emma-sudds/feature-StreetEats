@@ -68,6 +68,10 @@ textarea {
     -moz-background-size: cover;
     background-image: url('/Content/Images/background/wedding.png')
 }
+.weddingMenu {
+    background-image: url('/Content/Images/menu/pages/chalkboard-black.jpg');
+    background-repeat: no-repeat;
+}
 #weddingCarousel {
     margin: auto;
     margin-top: 100px;
@@ -326,7 +330,7 @@ ul.nav {
     display: inline-block;
 }
 #weddingCarousel > .carousel-inner{
-    margin-left: 23%;
+    margin-left: 20%;
 }
 .topContainer{
     text-align: center;
@@ -577,4 +581,14 @@ ul.nav {
 }
 .galleryNavRow {
     z-index: 1;
+}
+.weddingCarouselInner {
+    width: 58%;
+}
+.weddingMenuPics {
+    width: 50%;
+    margin-left: 5%;
+}
+.weddingMenu {
+    padding-top: 5%;
 }

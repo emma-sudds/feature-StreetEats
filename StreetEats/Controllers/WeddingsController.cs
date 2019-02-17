@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using StreetEats.Models;
-using System.IO;
 using System.Net.Mail;
 using System.Net;
+using System.Configuration;
 
 namespace StreetEats.Controllers
 {
@@ -26,39 +24,36 @@ namespace StreetEats.Controllers
         // GET: Wedding
         public ActionResult Index()
         {
-            string backgroundImage = "";
-            string menuFrontPageImage = "";
-            List<string> menuPages = new List<string>();
-            string[] backGroundImageFiles = Directory.GetFiles("C:\\Users\\HazeyOrion\\Documents\\StreetEats\\StreetEats\\StreetEats\\Content\\Images\\background");
-            string[] menuFrontImageFiles = Directory.GetFiles("C:\\Users\\HazeyOrion\\Documents\\StreetEats\\StreetEats\\StreetEats\\Content\\Images\\menu\\front");
-            string[] menuPagesImageFiles = Directory.GetFiles("C:\\Users\\HazeyOrion\\Documents\\StreetEats\\StreetEats\\StreetEats\\Content\\Images\\menu\\pages");
+            string allPicturesLocation = "/Content/Images/wedding";
+            List<string> weddingCategories = ConfigurationManager.AppSettings["weddingCategories"].Split('|').ToList();
+            List<string> weddingFirstPage = ConfigurationManager.AppSettings["weddingStartingPage"].Split('|').ToList();
+            List<string> weddingNames = ConfigurationManager.AppSettings["weddingFoodNames"].Split('|').ToList();
+            List<string> weddingPictureNames = ConfigurationManager.AppSettings["weddingPictures"].Split('|').ToList();
+            List<string> weddingDescriptions = ConfigurationManager.AppSettings["weddingDescriptions"].Split('|').ToList();
+            List<Weddings> weddingCategoryDetails = new List<Weddings>();
 
-            foreach (string file in backGroundImageFiles)
+            for (int category = 0; category < weddingCategories.Count; category++)
             {
-                string fileName = Path.GetFileName(file);
-                backgroundImage = "/Content/Images/background/" + fileName;
+                List<string> categoryFoodNames = weddingNames[category].Split('\\').ToList();
+                List<string> categoryFileNames = weddingPictureNames[category].Split(',').ToList();
+                List<string> categoryFoodDescriptions = weddingDescriptions[category].Split('\\').ToList();
+
+                for (int file = 0; file < categoryFileNames.Count; file++)
+                {
+                    categoryFileNames[file] = allPicturesLocation + "/"+ categoryFileNames[file];
+                }
+
+                var weddingInfo = new Weddings
+                {
+                    header = weddingCategories[category],
+                    startingPage = weddingFirstPage[category],
+                    fileLocations = categoryFileNames,
+                    foodNames = categoryFoodNames,
+                    descriptions = categoryFoodDescriptions
+                };
+                weddingCategoryDetails.Add(weddingInfo);
             }
-
-            foreach (string file in menuFrontImageFiles)
-            {
-                string fileName = Path.GetFileName(file);
-                menuFrontPageImage = "/Content/Images/menu/front/" + fileName;
-            }
-
-            foreach (string file in menuPagesImageFiles)
-            {
-                string fileName = Path.GetFileName(file);
-                menuPages.Add("/Content/images/menu/pages/" + fileName);
-            }
-
-            var weddingInfo = new Weddings
-            {
-                backGroundImage = backgroundImage,
-                menuFrontPage = menuFrontPageImage,
-                MenuPage = menuPages
-            };
-
-            return View(weddingInfo);
+            return View(weddingCategoryDetails);
         }
 
         [HttpPost]
