@@ -34,6 +34,7 @@ namespace StreetEats.Controllers
 
             for (int category = 0; category < weddingCategories.Count; category++)
             {
+                List<food> weddingFoods = new List<food>();
                 List<string> categoryFoodNames = weddingNames[category].Split('\\').ToList();
                 List<string> categoryFileNames = weddingPictureNames[category].Split(',').ToList();
                 List<string> categoryFoodDescriptions = weddingDescriptions[category].Split('\\').ToList();
@@ -42,14 +43,33 @@ namespace StreetEats.Controllers
                 {
                     categoryFileNames[file] = allPicturesLocation + "/"+ categoryFileNames[file];
                 }
+                
+                var foodDetails = categoryFoodNames.Zip(categoryFileNames, (name, file) => new
+                {
+                    Name = name,
+                    File = file,
+                })
+                .Zip(categoryFoodDescriptions, (a, b) => new
+                {
+                    Name = a.Name,
+                    File = a.File,
+                    Description = b,
+                });
 
+                foreach (var weddingFood in foodDetails) {
+                    var foodDetail = new food
+                    {
+                        fileLocation = weddingFood.File,
+                        foodName = weddingFood.Name,
+                        description = weddingFood.Description
+                    };
+                    weddingFoods.Add(foodDetail);
+                }
                 var weddingInfo = new Weddings
                 {
                     header = weddingCategories[category],
                     startingPage = weddingFirstPage[category],
-                    fileLocations = categoryFileNames,
-                    foodNames = categoryFoodNames,
-                    descriptions = categoryFoodDescriptions
+                    foodOfCategory = weddingFoods
                 };
                 weddingCategoryDetails.Add(weddingInfo);
             }

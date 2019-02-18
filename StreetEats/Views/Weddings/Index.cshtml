@@ -5,12 +5,6 @@
     Layout = "~/Views/Shared/_weddingLayout.cshtml";
 }
 <div id="weddingCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#weddingCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#weddingCarousel" data-slide-to="1"></li>
-        <li data-target="#weddingCarousel" data-slide-to="2"></li>
-    </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner weddingCarouselInner">
@@ -21,13 +15,29 @@
             {
                 activeClass = "active";
             }
-            <div class="item weddingMenu @activeClass">
-                <h1 class="weddingMenu">@item.header</h1>
-                @foreach (var food in item.fileLocations)
-                {
-                    <img src ="@food" class="weddingMenuPics"/>
-                }
+        <div class="item weddingMenu @activeClass">
+            <h1 class="weddingMenu">@item.header</h1>
+            @foreach (var food in item.foodOfCategory)
+            {
+                <div class="weddingFoodRow">
+                    <div class="foodPic">
+                        <img src="@food.fileLocation" class="weddingMenuPics" />
+                    </div>
+                    <div class="foodInfo">
+                        <h3>@food.foodName</h3>
+                        <p>@food.description</p>
+                    </div>
+                </div>
+            }
+
+            <div class="weddingMenuInfo bottomWeddingInfo">
+                <div>
+                    <img class="arrow" src="~/Content/Images/wedding/arrow2.png" />
+                    <div class="flowerPic"><img class="flower" src="~/Content/Images/wedding/flower.png" /></div>
+                    <div class="weddingContact"><p class="weddingContactP">Please contact us for questions on the menu or changes you would like</p></div>
+                </div>
             </div>
+        </div>
         }
     </div>
 

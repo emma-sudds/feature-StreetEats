@@ -6,8 +6,6 @@ namespace StreetEats.Models
     {
         public string header { get; set; }
         public string startingPage { get; set; }
-        public List<string> fileLocations { get; set; }
-        public List<string> foodNames { get; set; }
-        public List<string> descriptions { get; set; }
+        public List<food> foodOfCategory { get; set; }
     }
 }
