@@ -1,0 +1,35 @@
+﻿@model StreetEats.Models.testimony
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="pageTitles">
+    <h1>Tesimonies</h1>
+</div>
+<div class="testimonyContainer">
+    <div class="testimonies">
+        <h1 class="testimoniesHeader">Satisfied Customers</h1>
+        @foreach (var testimonie in Model.testimonies)
+        {
+            <div class="box1 speechBubble">
+                @testimonie.fullTestimonyText
+            </div>
+            <div class="testimonyName">
+                @testimonie.fullTestimonyName
+            </div>
+        }
+    </div>
+    <div class="tweets">
+        <h1 class="testimoniesHeader">Tasty Tweets</h1>
+        <blockquote class="twitter-tweet tw-align-center" data-lang="en-gb"><p lang="en" dir="ltr">A hackathon with a juice bar? Yes, please! Breakfast is served at <a href="https://twitter.com/hashtag/RealexFinAppsParty?src=hash&amp;ref_src=twsrc%5Etfw">#RealexFinAppsParty</a>! <a href="https://twitter.com/RealexPayments?ref_src=twsrc%5Etfw">@@RealexPayments</a> <a href="https://t.co/a9WPOcmMMe">pic.twitter.com/a9WPOcmMMe</a></p>&mdash; AngelHack (@@AngelHack) <a href="https://twitter.com/AngelHack/status/708561166172344320?ref_src=twsrc%5Etfw">12 March 2016</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet tw-align-center" data-lang="en-gb"><p lang="en" dir="ltr">It&#39;s lunch time at <a href="https://twitter.com/hashtag/RealexFinAppsParty?src=hash&amp;ref_src=twsrc%5Etfw">#RealexFinAppsParty</a> thanks to <a href="https://twitter.com/StreetEatsUK?ref_src=twsrc%5Etfw">@@StreetEatsUK</a> <a href="https://twitter.com/hashtag/nomnomnom?src=hash&amp;ref_src=twsrc%5Etfw">#nomnomnom</a> <a href="https://t.co/JmrPnT4soG">pic.twitter.com/JmrPnT4soG</a></p>&mdash; Realex Payments (@@RealexPayments) <a href="https://twitter.com/RealexPayments/status/708628718940459008?ref_src=twsrc%5Etfw">12 March 2016</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet tw-align-center" data-lang="en-gb"><p lang="en" dir="ltr"><a href="https://twitter.com/StreetEatsUK?ref_src=twsrc%5Etfw">@@StreetEatsUK</a> are killing it at <a href="https://twitter.com/Bazaarvoice?ref_src=twsrc%5Etfw">@@Bazaarvoice</a> London today with their lunch spread <a href="https://twitter.com/hashtag/livebv?src=hash&amp;ref_src=twsrc%5Etfw">#livebv</a> <a href="http://t.co/R8IeZzNrL0">pic.twitter.com/R8IeZzNrL0</a></p>&mdash; David Cullen (@@DavidCullen57) <a href="https://twitter.com/DavidCullen57/status/626720413700214784?ref_src=twsrc%5Etfw">30 July 2015</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet tw-align-center" data-lang="en-gb"><p lang="en" dir="ltr">I LOVE LUNCH 2018 - Congratulations to <a href="https://twitter.com/StreetEatsUK?ref_src=twsrc%5Etfw">@@StreetEatsUK</a> <a href="https://twitter.com/cocodimama_uk?ref_src=twsrc%5Etfw">@@cocodimama_uk</a> <a href="https://twitter.com/HammersmithRam?ref_src=twsrc%5Etfw">@@HammersmithRam</a> <a href="https://twitter.com/leonrestaurants?ref_src=twsrc%5Etfw">@@leonrestaurants</a>!  Winners of this year&#39;s competition!   - <a href="https://t.co/05Y8njEipy">https://t.co/05Y8njEipy</a> <a href="https://t.co/kwd6YnYBLK">pic.twitter.com/kwd6YnYBLK</a></p>&mdash; HammersmithLondon (@@HammersmithBID) <a href="https://twitter.com/HammersmithBID/status/1001423338290458625?ref_src=twsrc%5Etfw">29 May 2018</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</div>
