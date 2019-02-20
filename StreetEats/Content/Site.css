@@ -53,7 +53,7 @@ textarea {
     height: 3.8vh !important;
     width: 2.5vw !important;
 }
-.glyphicon-home, .glyphicon-info-sign, .glyphicon-envelope, .glyphicon-picture {
+.glyphicon-home, .glyphicon-info-sign, .glyphicon-envelope, .glyphicon-picture, .glyphicon-thumbs-up, .glyphicon-bullhorn {
     font-size: 3.5vh !important;
 }
 .iconFreepik {
@@ -282,12 +282,13 @@ h1 {
     margin: auto;
     padding: 0.5%;
     width: 40%;
-    color:#a2356a;
+    color: #a2356a;
+    padding-right: 6%;
 }
-    #StreetEatsInfo > h1, #StreetEatsInfo > h3, .pageTitles > h1 {
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-    }
+#StreetEatsInfo > h1, #StreetEatsInfo > h3, .pageTitles > h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
 .pageTitles {
     position: fixed;
     left: 30px;
@@ -318,7 +319,7 @@ ul.nav {
     padding: 0;
 }
 .nav > li {
-    width: 11.1%;
+    width: 9.09%;
 }
 .nav > li > a {
     text-align: center;
@@ -491,7 +492,7 @@ ul.nav {
     color: rgb(248, 238, 65);
 }
 .navbar-collapse{
-    width: 890px;
+    width: 1000px;
 }
 .btn-outline-black {
     border: 2px solid #000 !important;
@@ -670,6 +671,7 @@ ul.nav {
     color: #333;
     position: relative;
     font-size: 16px;
+    border-radius: 15px;
 }
 .speechBubble:before {
     content: "";
@@ -703,11 +705,35 @@ ul.nav {
     margin-left: 134px;
     font-weight: bold;
     font-size: 24px;
+    margin-bottom: 1.5%;
 }
 .testimoniesHeader {
-    color: rgb(162, 53, 106);
 }
 .testimonyContainer {
-    margin-top: 1.5%;
+    margin-top: 2%;
     display: flex;
+}
+.testimonies, .tweets {
+    -webkit-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
+    -moz-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
+    box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
+    background: url(/Content/images/background/cream_dust.png) repeat 0 0;
+    margin: 2%;
+}
+.testimonyCategory {
+    color: rgb(248, 238, 65);
+    padding-top: 1%;
+}
+.categoryImage {
+    height: 6.8vh;
+    padding-bottom: 1%;
+}
+.categoryHeader {
+    text-align: center;
+    background-color:rgb(162, 53, 106);
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1100px;
+    }
 }

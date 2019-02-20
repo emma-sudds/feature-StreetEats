@@ -9,5 +9,6 @@ namespace StreetEats.Models
     {
         public string fullTestimonyText { get; set; }
         public string fullTestimonyName { get; set; }
+        public string testimonyCategory { get; set; }
     }
 }
