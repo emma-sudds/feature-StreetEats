@@ -275,8 +275,14 @@ h1 {
     background-color: #a2356a!important;
     border-color: #872c58!important;
 }
-.container-box{
-    top: 45%!important;
+.feedbackButton {
+    background-color: rgb(248, 238, 65) !important;
+    border-color: #f6ea09 !important;
+    color: rgb(162, 53, 106) !important;
+    font-weight: bold;
+}
+.container-box {
+    top: 45% !important;
 }
 #StreetEatsInfo {
     margin: auto;
@@ -736,4 +742,15 @@ ul.nav {
     .container {
         width: 1100px;
     }
+}
+.feedbackContainer {
+    top: 30% !important;
+}
+.feedbackHeader, .contactHeader {
+    text-align: center;
+}
+.btn-success {
+    color: #fff;
+    background-color: #a2356a;
+    border-color: #872c58;
 }

@@ -45,10 +45,17 @@
         );
         doAnimations($animatingElems);
     });
+
     function after_form_submitted(data) {
             $('form#reused_form').hide();
             $('#success_message').show();
             $('#error_message').hide();
+    }
+
+    function afterFeedBackForm_Submitted(data) {
+        $('form#feedbackForm').hide();
+        $('#feedBackSuccessMessage').show();
+        $('#feedbackErrorMessage').hide();
     }
 
     function errorSendingForm() {
@@ -72,7 +79,36 @@
         });
 
     }
- 
+    function errorSendingFeedbackForm() {
+        $('#feedbackErrorMessage').append('<ul></ul>');
+
+        jQuery.each(data.errors, function (key, val) {
+            $('#feedbackErrorMessage ul').append('<li>' + key + ':' + val + '</li>');
+        });
+        $('#feedBackSuccessMessage').hide();
+        $('#feedbackErrorMessage').show();
+
+        //reverse the response on the button
+        $('button[type="button"]', $form).each(function () {
+            $btn = $(this);
+            label = $btn.prop('orig_label');
+            if (label) {
+                $btn.prop('type', 'submit');
+                $btn.text(label);
+                $btn.prop('orig_label', '');
+            }
+        });
+
+    }
+
+    $('.feedbackButton').click(function (e) {
+        $('#feedBackSuccessMessage').hide();
+        $('#feedbackErrorMessage').hide();
+        $('#btnFeedback').text('Post It! →');
+        $('#feedbackModal').modal('show');
+        $('form#feedbackForm').show();
+    });
+
     $('#reused_form').submit(function (e) {
         e.preventDefault();
         $form = $(this);
@@ -96,4 +132,21 @@
         });
 
     });
+
+    $('#btnFeedback').click(function (e) {
+        e.preventDefault();
+        var url = $(this).data('request-url');
+        $('#btnFeedback').text('Sending ...');
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: $('#feedbackForm').serialize(),
+            success: afterFeedBackForm_Submitted,
+            dataType: 'json',
+            error: errorSendingFeedbackForm
+        });
+
+    });
+
 });

@@ -1,0 +1,80 @@
+﻿<div class="container-box feedbackContainer rotated">
+    <button type="button" class="btn btn-info btn-lg turned-button feedbackButton" data-toggle="modal">Feedback</button>
+</div>
+
+<!-- Modal -->
+<div id="feedbackModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header feedbackHeader">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Feedback</h4>
+            </div>
+            <div class="modal-body feedbackBody">
+                <form role="form" method="post" id="feedbackForm" data-request-url="@Url.Action("AjaxFeedbackForm", "Weddings")">
+                    <p>
+                        Already been a customer of ours? <br />
+                        We would love to hear from you.
+                    </p>
+                    <div class="form-group">
+                        <label for="name">
+                            Name:
+                        </label>
+                        <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            Email:
+                        </label>
+                        <input type="email" class="form-control"
+                               id="email" name="email" required maxlength="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="feedbackCategory">
+                            What is the feedback regarding? <br />
+                            (e.g. Wedding, Corporate Event)
+                        </label>
+                        <input type="text" class="form-control"
+                               id="feedbackCategory" name="feedbackCategory" required maxlength="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="useFeedback">
+                            Can we use your feedback?<br />
+                            On our website or promotional materal?
+                        </label>
+                        <div class="dropdown">
+                            <select name="useFeedback" class="c-form-profession form-control" id="c-form-profession">
+                                <option value="Use your feedback...">Use your feedback...</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">
+                            Feedback
+                        </label>
+                        <textarea class="form-control" type="textarea" name="message"
+                                  id="message" placeholder="Your Message Here"
+                                  maxlength="6000" rows="7"></textarea>
+                        @{
+                            var controllerName = ViewContext.RouteData.Values["controller"].ToString();
+                            <input type="hidden" name="subject" id="HiddenText" value="feedback" />
+                        }
+                    </div>
+                    <button class="btn btn-lg btn-success btn-block" id="btnFeedback">Post It! →</button>
+                </form>
+                <div id="feedBackSuccessMessage" style="width:100%; height:100%; display:none; ">
+                    <h3>Sent your message successfully!</h3>
+                </div>
+                <div id="feedbackErrorMessage"
+                     style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
