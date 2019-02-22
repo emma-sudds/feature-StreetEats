@@ -52,11 +52,6 @@
             $('#error_message').hide();
     }
 
-    function afterFeedBackForm_Submitted(data) {
-        $('form#feedbackForm').hide();
-        $('#feedBackSuccessMessage').show();
-        $('#feedbackErrorMessage').hide();
-    }
 
     function errorSendingForm() {
         $('#error_message').append('<ul></ul>');
@@ -79,29 +74,9 @@
         });
 
     }
-    function errorSendingFeedbackForm() {
-        $('#feedbackErrorMessage').append('<ul></ul>');
-
-        jQuery.each(data.errors, function (key, val) {
-            $('#feedbackErrorMessage ul').append('<li>' + key + ':' + val + '</li>');
-        });
-        $('#feedBackSuccessMessage').hide();
-        $('#feedbackErrorMessage').show();
-
-        //reverse the response on the button
-        $('button[type="button"]', $form).each(function () {
-            $btn = $(this);
-            label = $btn.prop('orig_label');
-            if (label) {
-                $btn.prop('type', 'submit');
-                $btn.text(label);
-                $btn.prop('orig_label', '');
-            }
-        });
-
-    }
 
     $('.feedbackButton').click(function (e) {
+        $('form#feedbackForm').trigger("reset");
         $('#feedBackSuccessMessage').hide();
         $('#feedbackErrorMessage').hide();
         $('#btnFeedback').text('Post It! →');
@@ -109,12 +84,20 @@
         $('form#feedbackForm').show();
     });
 
-    $('#reused_form').submit(function (e) {
+    $('.contactButton').click(function (e) {
+        $('form#contactForm').trigger("reset");
+        $('#contactSuccessMessage').hide();
+        $('#contactErrorMessage').hide();
+        $('#btnContactUs').text('Post It! →');
+        $('#contactModal').modal('show');
+        $('form#contactForm').show();
+    });
+
+    $('#btnContactUs').click(function (e) {
         e.preventDefault();
-        $form = $(this);
-        var url = $(this).data('request-url');
+        var url = $('#contactForm').data('request-url');
         //show some response on the button
-        $('button[type="submit"]', $form).each(function () {
+        $('button[type="submit"]', $('#contactForm')).each(function () {
             $btn = $(this);
             $btn.prop('type', 'button');
             $btn.prop('orig_label', $btn.text());
@@ -125,26 +108,74 @@
         $.ajax({
             type: "POST",
             url: url,
-            data: $form.serialize(),
-            success: after_form_submitted,
+            data: $('#contactForm').serialize(),
+            success: function (data) {
+                $('form#contactForm').hide();
+                $('#contactSuccessMessage').show();
+                $('#contactErrorMessage').hide();
+            },
             dataType: 'json',
-            error: errorSendingForm
+            error: function (data) {
+                $('#contactErrorMessage').append('<ul></ul>');
+
+                jQuery.each(data.errors, function (key, val) {
+                    $('#contactErrorMessage ul').append('<li>' + key + ':' + val + '</li>');
+                });
+                $('#contactSuccessMessage').hide();
+                $('#contactErrorMessage').show();
+
+                //reverse the response on the button
+                $('button[type="button"]', $('form#contactForm')).each(function () {
+                    $btn = $(this);
+                    label = $btn.prop('orig_label');
+                    if (label) {
+                        $btn.prop('type', 'submit');
+                        $btn.text(label);
+                        $btn.prop('orig_label', '');
+                    }
+                });
+
+            }
         });
 
     });
 
     $('#btnFeedback').click(function (e) {
         e.preventDefault();
-        var url = $(this).data('request-url');
+        var url = $('#feedbackForm').data('request-url');
         $('#btnFeedback').text('Sending ...');
 
         $.ajax({
             type: "POST",
             url: url,
             data: $('#feedbackForm').serialize(),
-            success: afterFeedBackForm_Submitted,
+            success: function (data) {
+                $('form#feedbackForm').hide();
+                $('#feedBackSuccessMessage').show();
+                $('#feedbackErrorMessage').hide();
+            },
             dataType: 'json',
-            error: errorSendingFeedbackForm
+            error: function (data) {
+                $('#feedbackErrorMessage').append('<ul></ul>');
+
+                jQuery.each(data.errors, function (key, val) {
+                    $('#feedbackErrorMessage ul').append('<li>' + key + ':' + val + '</li>');
+                });
+                $('#feedBackSuccessMessage').hide();
+                $('#feedbackErrorMessage').show();
+
+                //reverse the response on the button
+                $('button[type="button"]', $('form#feedbackForm')).each(function () {
+                    $btn = $(this);
+                    label = $btn.prop('orig_label');
+                    if (label) {
+                        $btn.prop('type', 'submit');
+                        $btn.text(label);
+                        $btn.prop('orig_label', '');
+                    }
+                });
+
+            }
         });
 
     });

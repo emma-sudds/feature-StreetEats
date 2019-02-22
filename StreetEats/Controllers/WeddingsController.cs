@@ -83,11 +83,14 @@ namespace StreetEats.Controllers
             GmailPassword = "Deadpool2019!";
             ToEmail = "emmasudds@live.co.uk";
             Subject = model.subject;
-            Body = model.message + "<br/>" + "From: " + model.email;
+            Body = "<b>Name: </b>" + model.name + "<br/>" +
+                   "<b>Message: </b>" + model.message + "<br/>" +
+                   "<b>Email Contact: </b>" + model.email;
             IsHtml = true;
             Send();
             return Json(model);
         }
+
         [HttpPost]
         public JsonResult AjaxFeedbackForm(feedback model)
         {
@@ -95,7 +98,11 @@ namespace StreetEats.Controllers
             GmailPassword = "Deadpool2019!";
             ToEmail = "emmasudds@live.co.uk";
             Subject = model.subject;
-            Body = "Feedback category: " + model.feedbackCategory + ", Use Feedback: " +model.useFeedback + ", message: " + model.message + "<br/>" + "From: " + model.email;
+            Body = "<b>Feedback category: </b>" + model.feedbackCategory + "<br/>" +
+                   "<b>Name: </b>" + model.name + " <br/>" +
+                   "<b>Allowed to use Feedback: </b>" + model.useFeedback + " <br/>" +
+                   "<b>Feedback: </b>" + model.message + "<br/>" +
+                   "<b>Email Contact: </b>" + model.email;
             IsHtml = true;
             Send();
             return Json(model);
