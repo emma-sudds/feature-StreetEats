@@ -1,4 +1,21 @@
 ﻿$(function () {
+    $(window).on('resize', function () {
+        var win = $(this);
+        if (win.height() >= 768) {
+            $('.navbar.navbar-inverse.navbar-fixed-top').removeClass('collapsedTopNav');
+            $('.navbar-side').removeClass('active');
+        }
+    });
+    $('.navSideBar').click(function (e) {
+        if ($('.navbar-side').hasClass('active')) {
+            $('.navbar-side').removeClass('active');
+            $('.navbar.navbar-inverse.navbar-fixed-top').removeClass('collapsedTopNav');
+        }
+        else {
+            $('.navbar-side').addClass('active');
+            $('.navbar.navbar-inverse.navbar-fixed-top').addClass('collapsedTopNav');
+        }
+    });
 
     var selectedClass = "";
     $(".filter").click(function () {

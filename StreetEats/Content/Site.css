@@ -813,3 +813,33 @@ ul.nav {
 .active > a > span, .active > a > div {
     color: rgb(162, 53, 106);
 }
+.navbar-side.active {
+    display: block;
+    width: 80vw;
+    background-color: rgb(162, 53, 106);
+}
+.navbar-side:not(active){
+    display: none;
+}
+.navbar-side.active > .nav > li {
+    width: 100%;
+}
+.navbar-side.active > .nav > .notactive:after {
+    content: "";
+    background: rgb(248, 238, 65);
+    position: absolute;
+    left: 10%;
+    height: 1px;
+    width: 80%;
+}
+.notactiveHome:before {
+    content: "";
+    background: rgb(248, 238, 65);
+    position: absolute;
+    left: 10%;
+    height: 1px;
+    width: 80%;
+}
+.collapsedTopNav {
+    height: 50px;
+}
