@@ -807,3 +807,9 @@ ul.nav {
     filter: alpha(opacity=20);
     opacity: 1;
 }
+.active > a{
+    background-color: rgb(248, 238, 65)!important;
+}
+.active > a > span, .active > a > div {
+    color: rgb(162, 53, 106);
+}

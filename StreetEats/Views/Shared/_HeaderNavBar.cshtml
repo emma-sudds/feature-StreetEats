@@ -9,17 +9,68 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href='@Url.Action("Index", "Home")'><span class="glyphicon glyphicon-home"></span><div class="text-center navText">Home</div></a></li>
-                <li><a href='@Url.Action("Index", "Weddings")'><img src='@Url.Content("/Content/Images/icons/wedding-ring.svg")' class="navIcon" /><div class="text-center navText">Weddings</div></a></li>
-                <li><a href='@Url.Action("About", "Home")'><img src='@Url.Content("/Content/Images/icons/office-building.svg")' class="navIcon" /><div class="text-center navText">Corporate</div></a></li>
-                <li><a href='@Url.Action("About", "Home")'><img src='@Url.Content("/Content/Images/icons/wine-glasses.svg")' class="navIcon" /><div class="text-center navText">Parties</div></a></li>
-                <li><a href='@Url.Action("About", "Home")'><img src='@Url.Content("/Content/Images/icons/market.svg")' class="navIcon" /><div class="text-center navText">Markets</div></a></li>
-                <li><img src="/Content/Images/logo/streetEats.png" alt="" class="IndexLogo"></li>
-                <li><a href='@Url.Action("Index", "testimonies")'><span class="glyphicon glyphicon-thumbs-up"></span><div class="text-center navText">Testimonies</div></a></li>
-                <li><a href='@Url.Action("Index", "testimonies")'><span class="glyphicon glyphicon-bullhorn"></span><div class="text-center navText">News</div></a></li>
-                <li><a href='@Url.Action("Index", "About")'><span class="glyphicon glyphicon-info-sign"></span><div class="text-center navText">About</div></a></li>
-                <li><a href='@Url.Action("Index", "Gallery")'><span class="glyphicon glyphicon-picture"></span><div class="text-center navText">Gallery</div></a></li>
-                <li><a href='@Url.Action("Contact", "Home")'><span class="glyphicon glyphicon-envelope"></span><div class="text-center navText">Contact</div></a></li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Home" ? "active" : "")">
+                <a href='@Url.Action("Index", "Home")'>
+                    <span class="glyphicon glyphicon-home"></span>
+                    <div class="text-center navText">Home</div>
+                    </a>
+                </li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Weddings" ? "active" : "")">
+                    <a href='@Url.Action("Index", "Weddings")'>
+                    <img src='@(ViewContext.RouteData.Values["Controller"].ToString() == "Weddings" ? "/Content/Images/icons/wedding-ring-pink.svg" : "/Content/Images/icons/wedding-ring.svg")' class="navIcon" />
+                    <div class="text-center navText">Weddings</div></a>
+                </li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Corporate" ? "active" : "")">
+                    <a href='@Url.Action("Index", "Corporate")'>
+                        <img src='@(ViewContext.RouteData.Values["Controller"].ToString() == "Corporate" ? "/Content/Images/icons/office-building-pink.svg" : "/Content/Images/icons/office-building.svg")' class="navIcon" />
+                        <div class="text-center navText">Corporate</div>
+                    </a>
+                </li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Parties" ? "active" : "")">
+                <a href='@Url.Action("Index", "Parties")'>
+                    <img src='@(ViewContext.RouteData.Values["Controller"].ToString() == "Parties" ? "/Content/Images/icons/party-pink.svg" : "/Content/Images/icons/party.svg")' class="navIcon" />
+                    <div class="text-center navText">Parties</div>
+                    </a>
+                </li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Markets" ? "active" : "")">
+                <a href='@Url.Action("Index", "Markets")'>
+                    <img src='@(ViewContext.RouteData.Values["Controller"].ToString() == "Markets" ? "/Content/Images/icons/market-pink.svg" : "/Content/Images/icons/market.svg")' class="navIcon" />
+                    <div class="text-center navText">Markets</div>
+                    </a>
+                </li>
+                <li>
+                    <img src="/Content/Images/logo/streetEats.png" alt="" class="IndexLogo">
+                </li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "testimonies" ? "active" : "")">
+                <a href='@Url.Action("Index", "testimonies")'>
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                    <div class="text-center navText">Testimonies</div>
+                    </a>
+                </li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "News" ? "active" : "")">
+                    <a href='@Url.Action("Index", "News")'>
+                        <span class="glyphicon glyphicon-bullhorn"></span>
+                        <div class="text-center navText">News</div>
+                    </a>
+                </li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "About" ? "active" : "")">
+                    <a href='@Url.Action("Index", "About")'>
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                        <div class="text-center navText">About</div>
+                    </a>
+                </li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Gallery" ? "active" : "")">
+                    <a href='@Url.Action("Index", "Gallery")'>
+                        <span class="glyphicon glyphicon-picture"></span>
+                        <div class="text-center navText">Gallery</div>
+                    </a>
+                </li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Contact" ? "active" : "")">
+                    <a href='@Url.Action("Index", "Contact")'>
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        <div class="text-center navText">Contact</div>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

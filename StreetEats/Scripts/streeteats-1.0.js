@@ -1,4 +1,5 @@
 ﻿$(function () {
+
     var selectedClass = "";
     $(".filter").click(function () {
         $(".filter").removeClass("filtered");
