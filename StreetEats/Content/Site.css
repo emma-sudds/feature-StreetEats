@@ -251,7 +251,7 @@ h1 {
     background-repeat: no-repeat;
 }
 .secondSlide {
-    background: url('/Content/images/slides/corporate.jpg');
+    background: url('/Content/images/slides/corporate.png');
     background-repeat: no-repeat;
 }
 .thirdSlide {
@@ -342,7 +342,7 @@ ul.nav {
     margin-bottom: 19px;
     padding-top: 33px;
 }
-#AboutStreetEatsContent > .row, .gallerySection > #gallery{
+#AboutStreetEatsContent > .row, .gallerySection > #gallery, .corporateContainer {
     -webkit-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
     -moz-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
     box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
@@ -384,7 +384,6 @@ ul.nav {
     max-width: 33%;
     padding: 0 4px;
 }
-
 .column img {
     margin-top: 8px;
     vertical-align: middle;
@@ -842,4 +841,49 @@ ul.nav {
 }
 .collapsedTopNav {
     height: 50px;
+}
+.topCorporateContainer {
+    margin-left: auto;
+    margin-right: auto;
+}
+.corporateRow > h3, .corporateRow > .platterDescription {
+    margin: auto;
+}
+.corporateRow > h3{
+    margin-top: 9px;
+}
+.corporateRow > .platterDescription {
+    font-size: 18px;
+}
+.topCorporateContainer{
+    width: 85%;
+}
+.corporatePlatter{
+    width: 100%;
+}
+.corporatecolumnImg {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+    max-width: 75%;
+    padding: 0 4px;
+}
+.corporatecolumnDescrip {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.foodSections {
+    padding: 2%;
+    border: 2px solid rgb(162, 53, 106);
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+
+.corporateRow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 2px;
 }
