@@ -1,4 +1,4 @@
-﻿@model List<StreetEats.Models.Weddings>
+﻿@model StreetEats.Models.Weddings
 
 @{
     ViewBag.Title = "Index";
@@ -8,36 +8,57 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner weddingCarouselInner">
-        @foreach (var item in Model)
-        {
-            string activeClass = "";
-            if (@item.startingPage == "true")
-            {
-                activeClass = "active";
-            }
-        <div class="item weddingMenu @activeClass">
-            <h1 class="weddingMenu">@item.header</h1>
-            @foreach (var food in item.foodOfCategory)
-            {
-                <div class="weddingFoodRow">
-                    <div class="foodPic">
-                        <img src="@food.fileLocation" class="weddingMenuPics" />
-                    </div>
-                    <div class="foodInfo">
-                        <h3>@food.foodName</h3>
-                        <p>@food.description</p>
-                    </div>
-                </div>
-            }
-
-            <div class="weddingMenuInfo bottomWeddingInfo">
-                <div>
-                    <img class="arrow" src="~/Content/Images/wedding/arrow2.png" />
-                    <div class="flowerPic"><img class="flower" src="~/Content/Images/wedding/flower.png" /></div>
-                    <div class="weddingContact"><p class="weddingContactP">Please contact us for questions on the menu or changes you would like</p></div>
-                </div>
+        <div class="item weddingMenu active">
+            <h1 class="weddingMenu">@Model.frontPageHeader</h1>
+            <div class="frontPageImageContainer1">
+                <img src="@Model.frontPageImage" class="frontPageImage" />
+            </div>
+            <div class="frontPageImageContainer">
+                <img src="@Model.frontPageImage2" class="frontPageImage2" />
             </div>
         </div>
+        <div class="item weddingMenu ">
+            <h1 class="weddingMenu">On Your Wedding Day</h1>
+            <div class="frontPageImageContainer1">
+                <img src="@Model.frontPageImage" class="frontPageImage" />
+            </div>
+            <div class="descriptionContainer">
+                @foreach (var text in Model.weddingDescription)
+                {
+                    <div class="weddingFrontPageText">
+                        @text
+                    </div>
+                }
+            </div>
+            <div class="descriptionContainer">
+                @Model.frontPageText
+            </div>
+        </div>
+        @foreach (var item in Model.weddingPages)
+        {
+            <div class="item weddingMenu">
+                <h1 class="weddingMenu">@item.header</h1>
+                @foreach (var food in item.foodOfCategory)
+                {
+                    <div class="weddingFoodRow">
+                        <div class="foodPic">
+                            <img src="@food.fileLocation" class="weddingMenuPics" />
+                        </div>
+                        <div class="foodInfo">
+                            <h3>@food.foodName</h3>
+                            <p>@food.description</p>
+                        </div>
+                    </div>
+                }
+
+                <div class="weddingMenuInfo bottomWeddingInfo">
+                    <div>
+                        <img class="arrow" src="~/Content/Images/wedding/arrow2.png" />
+                        <div class="flowerPic"><img class="flower" src="~/Content/Images/wedding/flower.png" /></div>
+                        <div class="weddingContact"><p class="weddingContactP">Please contact us for questions on the menu or changes you would like</p></div>
+                    </div>
+                </div>
+            </div>
         }
     </div>
 

@@ -73,8 +73,8 @@ C:\Users\HazeyOrion\Documents\StreetEats\StreetEats\StreetEats\bin\Antlr3.Runtim
 C:\Users\HazeyOrion\Documents\StreetEats\StreetEats\StreetEats\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\HazeyOrion\Documents\StreetEats\StreetEats\StreetEats\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\HazeyOrion\Documents\StreetEats\StreetEats\StreetEats\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\HazeyOrion\Documents\StreetEats\StreetEats\StreetEats\obj\Debug\StreetEats.csprojAssemblyReference.cache
 C:\Users\HazeyOrion\Documents\StreetEats\StreetEats\StreetEats\obj\Debug\StreetEats.csproj.CoreCompileInputs.cache
 C:\Users\HazeyOrion\Documents\StreetEats\StreetEats\StreetEats\obj\Debug\StreetEats.csproj.CopyComplete
 C:\Users\HazeyOrion\Documents\StreetEats\StreetEats\StreetEats\obj\Debug\StreetEats.dll
 C:\Users\HazeyOrion\Documents\StreetEats\StreetEats\StreetEats\obj\Debug\StreetEats.pdb
+C:\Users\HazeyOrion\Documents\StreetEats\StreetEats\StreetEats\obj\Debug\StreetEats.csprojAssemblyReference.cache

@@ -25,12 +25,14 @@ namespace StreetEats.Controllers
         public ActionResult Index()
         {
             string allPicturesLocation = "/Content/Images/wedding";
+            string frontPageHeader = ConfigurationManager.AppSettings["weddingMenuHeader"];
+            string frontPageText = ConfigurationManager.AppSettings["weddingMenuText"];
+            string weddingMenuDescription = ConfigurationManager.AppSettings["weddingMenuDescription"];
             List<string> weddingCategories = ConfigurationManager.AppSettings["weddingCategories"].Split('|').ToList();
-            List<string> weddingFirstPage = ConfigurationManager.AppSettings["weddingStartingPage"].Split('|').ToList();
             List<string> weddingNames = ConfigurationManager.AppSettings["weddingFoodNames"].Split('|').ToList();
             List<string> weddingPictureNames = ConfigurationManager.AppSettings["weddingPictures"].Split('|').ToList();
             List<string> weddingDescriptions = ConfigurationManager.AppSettings["weddingDescriptions"].Split('|').ToList();
-            List<Weddings> weddingCategoryDetails = new List<Weddings>();
+            List<WeddingPage> weddingCategoryDetails = new List<WeddingPage>();
 
             for (int category = 0; category < weddingCategories.Count; category++)
             {
@@ -65,15 +67,22 @@ namespace StreetEats.Controllers
                     };
                     weddingFoods.Add(foodDetail);
                 }
-                var weddingInfo = new Weddings
+                var weddingInfo = new WeddingPage
                 {
                     header = weddingCategories[category],
-                    startingPage = weddingFirstPage[category],
                     foodOfCategory = weddingFoods
                 };
                 weddingCategoryDetails.Add(weddingInfo);
             }
-            return View(weddingCategoryDetails);
+
+            Weddings weddingData = new Weddings();
+            weddingData.weddingPages = weddingCategoryDetails;
+            weddingData.frontPageHeader = frontPageHeader;
+            weddingData.frontPageText = frontPageText;
+            weddingData.frontPageImage = allPicturesLocation + "/" + ConfigurationManager.AppSettings["weddingMenuImage"];
+            weddingData.frontPageImage2 = allPicturesLocation + "/" + ConfigurationManager.AppSettings["weddingMenuImage2"];
+            weddingData.weddingDescription = weddingMenuDescription.Split('|').ToList();
+            return View(weddingData);
         }
 
         [HttpPost]
