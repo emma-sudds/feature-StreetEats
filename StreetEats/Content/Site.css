@@ -605,6 +605,7 @@ ul.nav {
     padding-right: 2%;
     padding-left: 2%;
     text-align: center;
+    font-size: 17px;
 }
 .weddingMenuInfo {
     margin-left: 5%;
@@ -623,9 +624,10 @@ ul.nav {
     color: white;
     font-family: 'Fredericka the Great', cursive;
     font-weight: normal;
+    margin-bottom: 10px;
 }
 .item.weddingMenu {
-    min-height: 800px;
+    height: 800px;
 }
 .arrow {
     width: 184px;
@@ -949,4 +951,17 @@ ul.nav {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 5%;
+}
+.descriptionContainer2 {
+    border-style: solid;
+    border-width: thin;
+    border-color: white;
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-size: 15px
+}
+.foodInfo > p {
+    font-size: 16px;
 }
