@@ -965,3 +965,14 @@ ul.nav {
 .foodInfo > p {
     font-size: 16px;
 }
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+#back-to-top {
+    background-color: #a2356a !important;
+    border-color: #872c58 !important;
+}
