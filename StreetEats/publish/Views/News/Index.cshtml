@@ -1,0 +1,24 @@
+﻿@model StreetEats.Models.News
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="pageTitles">
+    <h1>News</h1>
+</div>
+<div class="newsContainer">
+    <div class="newsArticles">
+        @foreach (var news in Model.allNews)
+        {
+            <div class="newsHeader row">
+                <h3 class="newsHeaderText">@news.newsHeader</h3>
+            </div>
+            <div class="newsText row contentRow">@news.newsText</div>
+            <div class="row newsImages contentRow">
+                <img src="@news.imageName" />
+            </div>
+        }
+    </div>
+</div>

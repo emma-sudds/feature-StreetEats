@@ -1,0 +1,99 @@
+﻿@model StreetEats.Models.About
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="AboutStreetEatsTitle" class="pageTitles">
+    <h1>About StreetEats</h1>
+</div>
+<div>
+    <div id="AboutStreetEatsContent" class="container topContainer">
+        <div class="row">
+            <div class="column">
+                <h3><b>Our Food</b></h3>
+                <div id="AboutFoodDescrip">
+                    <p>Our food is always colourful, vibrant and rammed full of flavour.</p>
+                    <p>If you want beige food, go to Greggs.</p>
+                    <p>If you want food that packs a punch, come see us.</p>
+                    <p>We love doing weddings, corporate events and parties!</p>
+                    <p>Any chance really to show off our repertoire. Our Vietnamese spring rolls canapes, bowls of steaming laksa and buns filled with sticky pulled pork and chilli slaw.</p>
+                    <p>For festivals, we bastardise the burrito, we are the legendary Kings of Katsu, delicious crispy chicken, our signature katsu curry sauce, brown rice, chilli slaw, wrapped tight.</p>
+                </div>
+            </div>
+            <div class="column">
+                @foreach (var fileName in Model.ourFoodCol1)
+                {
+                    <img src="@fileName" style="width:100%" />
+                }
+            </div>
+            <div class="column">
+                @foreach (var fileName in Model.ourFoodCol2)
+                {
+                    <img src="@fileName" style="width:100%" />
+                }
+            </div>
+        </div>
+    </div>
+
+
+    <div id="AboutStreetEatsContent" class="container topContainer">
+        <div class="row">
+            <div class="column">
+                <h3><b>Why did we start up our business?</b></h3>
+                <div id="AboutFoodDescrip">
+                    <p>It was in 2010, in a small surfing town in Sri Lanka that Street Eats was truly born.</p>
+                    <p>In search of cheap, nutritious food I came across a small stall, buzzing with westerners and locals! </p>
+                    <p>I began talking to the owner over some of Sri Lanka’s finest Kottu Roti and the very next day I joined him in his humble kitchen</p>
+                    <p>I cooked away in a pair of shorts, bare chested while we used old newspapers to dab our sweat away. I learnt everything I could from the owner about Sri Lankan street food. Thank you Arak!</p>
+                    <p>Why mobile catering? </p>
+                    <p>Variety is the spice of life and that's why we love mobile catering. It throws up something new everytime you venture out. We love the comaraderie with the other traders, learning of far away cultures, swapping food, banter with the customers, the adrenaline spike when the pressure is on, fresh air in your lungs, being outside everyday, being your own boss without putting everything on the line, being creative, being competitive, making people happy, providing colour and nutrition to the world</p>
+                </div>
+            </div>
+            <div class="column">
+                @foreach (var fileName in Model.business1)
+                {
+                    <img src="@fileName" style="width:100%" />
+                }
+            </div>
+            <div class="column">
+                @foreach (var fileName in Model.business2)
+                {
+                    <img src="@fileName" style="width:100%" />
+                }
+            </div>
+        </div>
+    </div>
+
+    <div id="AboutStreetEatsContent" class="container topContainer">
+        <div class="row">
+            <div class="column">
+                <h3><b>We've won awards</b></h3>
+                <div id="AboutFoodDescrip">
+                    <p>Did you know StreetEats used to be a cafe in Hammersmith?</p>
+                    <p>Not just that but we won awards!</p>
+                    <p>We were 3 times winner of Best Cafe in Hammersmith (I Love Lunch) in 2016, 2017, 2018.</p>
+                    <p>We were also 2 times runner up best place to eat Fulham/Hammersmith/Shepherds Bush (H&F Brilliant Business Awards) in 2016 and 2018.</p>
+                </div>
+            </div>
+            <div class="column">
+                @foreach (var fileName in Model.awards1)
+                {
+                    <img src="@fileName" style="width:100%" />
+                }
+            </div>
+            <div class="column">
+                @foreach (var fileName in Model.awards2)
+                {
+                    <img src="@fileName" style="width:100%" />
+                }
+            </div>
+        </div>
+    </div>
+    <img src="@Model.face" id="face" />
+    <div id="faceDescription">
+        Michael of StreetEats
+    </div>
+
+</div>

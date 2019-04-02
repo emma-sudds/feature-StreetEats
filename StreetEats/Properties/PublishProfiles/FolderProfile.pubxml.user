@@ -1,0 +1,1678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\HazeyOrion\Documents\StreetEats\StreetEats\StreetEats\publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>10/09/2013 17:29:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>10/09/2013 17:29:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.TelemetryCorrelation.dll">
+      <publishTime>06/28/2017 16:05:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 14:38:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 12:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/18/2018 09:44:54</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/24/2018 14:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 14:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 14:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 14:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/24/2018 14:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 14:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/24/2018 14:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/24/2018 14:38:24</publishTime>
+    </File>
+    <File Include="bin/StreetEats.dll">
+      <publishTime>04/02/2019 22:28:03</publishTime>
+    </File>
+    <File Include="bin/StreetEats.pdb">
+      <publishTime>04/02/2019 22:28:03</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>07/19/2017 11:01:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/02/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/02/2018 12:16:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/02/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/02/2018 12:16:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/02/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/02/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/02/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 13:57:34</publishTime>
+    </File>
+    <File Include="Content/animate.css">
+      <publishTime>01/20/2019 22:00:23</publishTime>
+    </File>
+    <File Include="Content/baguetteBox.min.css">
+      <publishTime>11/28/2018 07:24:23</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>04/12/2018 15:15:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>04/12/2018 15:15:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>04/12/2018 15:15:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>04/12/2018 15:15:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>12/22/2018 21:53:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>04/12/2018 15:15:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>04/12/2018 15:15:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>04/12/2018 15:15:01</publishTime>
+    </File>
+    <File Include="Content/contact.css">
+      <publishTime>02/20/2019 20:51:41</publishTime>
+    </File>
+    <File Include="Content/fluid-gallery.css">
+      <publishTime>02/15/2019 21:40:14</publishTime>
+    </File>
+    <File Include="Content/Images/about/awards/col1_1award.jpg">
+      <publishTime>01/31/2019 21:58:43</publishTime>
+    </File>
+    <File Include="Content/Images/about/awards/col1_2award.jpg">
+      <publishTime>01/31/2019 21:59:21</publishTime>
+    </File>
+    <File Include="Content/Images/about/awards/col1_3award.jpg">
+      <publishTime>01/30/2019 21:36:25</publishTime>
+    </File>
+    <File Include="Content/Images/about/awards/col2_award.JPG">
+      <publishTime>01/24/2019 21:06:01</publishTime>
+    </File>
+    <File Include="Content/Images/about/business/col1_1.jpg">
+      <publishTime>01/30/2019 21:02:52</publishTime>
+    </File>
+    <File Include="Content/Images/about/business/col1_2.jpg">
+      <publishTime>01/30/2019 20:11:46</publishTime>
+    </File>
+    <File Include="Content/Images/about/business/col1_3.JPG">
+      <publishTime>01/24/2019 21:08:24</publishTime>
+    </File>
+    <File Include="Content/Images/about/business/col2_1.jpg">
+      <publishTime>01/30/2019 21:03:48</publishTime>
+    </File>
+    <File Include="Content/Images/about/business/col2_2.jpg">
+      <publishTime>01/30/2019 21:14:52</publishTime>
+    </File>
+    <File Include="Content/Images/about/business/col2_3.jpg">
+      <publishTime>01/30/2019 21:03:19</publishTime>
+    </File>
+    <File Include="Content/Images/about/face/face.png">
+      <publishTime>01/31/2019 19:53:35</publishTime>
+    </File>
+    <File Include="Content/Images/about/ourFood/col1_1.jpg">
+      <publishTime>01/24/2019 21:06:35</publishTime>
+    </File>
+    <File Include="Content/Images/about/ourFood/col1_2.JPG">
+      <publishTime>01/30/2019 20:05:08</publishTime>
+    </File>
+    <File Include="Content/Images/about/ourFood/col2_1.jpg">
+      <publishTime>01/24/2019 21:09:20</publishTime>
+    </File>
+    <File Include="Content/Images/about/ourFood/col2_2.JPG">
+      <publishTime>01/24/2019 21:08:01</publishTime>
+    </File>
+    <File Include="Content/Images/background/cream_dust.png">
+      <publishTime>01/10/2012 15:22:16</publishTime>
+    </File>
+    <File Include="Content/Images/background/wedding.jpeg">
+      <publishTime>02/18/2019 21:05:40</publishTime>
+    </File>
+    <File Include="Content/Images/background/wedding.png">
+      <publishTime>12/24/2018 21:48:24</publishTime>
+    </File>
+    <File Include="Content/Images/corporate/CorporatePlatter.png">
+      <publishTime>02/26/2019 21:06:38</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/10_general_big_2.jpg">
+      <publishTime>01/30/2019 21:14:52</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/11_general_small.jpg">
+      <publishTime>01/30/2019 21:36:25</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/12_market_big.jpg">
+      <publishTime>01/24/2019 21:09:17</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/13_market_big.JPG">
+      <publishTime>01/24/2019 21:07:12</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/14_market_big.jpg">
+      <publishTime>01/30/2019 21:37:11</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/15_market_small.jpg">
+      <publishTime>02/04/2019 21:45:00</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/16_market_small.jpg">
+      <publishTime>01/24/2019 21:06:57</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/17_event_small.jpg">
+      <publishTime>01/24/2019 21:06:17</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/18_event_big.jpg">
+      <publishTime>02/15/2019 22:27:55</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/19_event_big.jpg">
+      <publishTime>02/15/2019 22:28:28</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/1_general_big_1.jpg">
+      <publishTime>02/12/2019 22:37:02</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/20_food_small.jpg">
+      <publishTime>02/15/2019 22:29:06</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/21_food_big.jpg">
+      <publishTime>02/15/2019 22:29:41</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/22_event_small.jpg">
+      <publishTime>02/15/2019 22:31:11</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/22_food_big.jpg">
+      <publishTime>02/15/2019 22:30:04</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/23_event_small.jpg">
+      <publishTime>02/15/2019 22:32:11</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/23_food_small.jpg">
+      <publishTime>02/15/2019 22:32:45</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/24_food_small.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/25_general_small.jpg">
+      <publishTime>02/15/2019 22:33:31</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/26_food_small.jpg">
+      <publishTime>02/15/2019 22:34:04</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/27_general_smalll.jpg">
+      <publishTime>02/04/2019 21:24:25</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/28_general_big.jpg">
+      <publishTime>02/15/2019 22:38:59</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/29_general_small.jpg">
+      <publishTime>02/15/2019 22:40:21</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/2_food_small.jpg">
+      <publishTime>02/12/2019 20:57:28</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/30_general_small.jpg">
+      <publishTime>02/15/2019 22:41:15</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/31_general_small.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/3_food_small_2.JPG">
+      <publishTime>02/12/2019 21:00:46</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/4_market_small_1.JPG">
+      <publishTime>01/24/2019 21:08:24</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/5_general_small_1.jpg">
+      <publishTime>01/30/2019 21:02:52</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/6_food_big_3.jpg">
+      <publishTime>02/12/2019 21:00:59</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/7_event_small_1.jpg">
+      <publishTime>01/30/2019 21:03:48</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/8_food_big_1.JPG">
+      <publishTime>01/30/2019 20:05:08</publishTime>
+    </File>
+    <File Include="Content/Images/gallery/9_food_big_2.jpg">
+      <publishTime>02/12/2019 21:01:16</publishTime>
+    </File>
+    <File Include="Content/Images/icons/market-pink.svg">
+      <publishTime>02/23/2019 15:57:51</publishTime>
+    </File>
+    <File Include="Content/Images/icons/market.svg">
+      <publishTime>02/23/2019 15:57:17</publishTime>
+    </File>
+    <File Include="Content/Images/icons/office-building-pink.svg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/icons/office-building.svg">
+      <publishTime>02/23/2019 15:51:06</publishTime>
+    </File>
+    <File Include="Content/Images/icons/party-pink.svg">
+      <publishTime>02/23/2019 15:39:54</publishTime>
+    </File>
+    <File Include="Content/Images/icons/party.svg">
+      <publishTime>05/12/2018 21:19:01</publishTime>
+    </File>
+    <File Include="Content/Images/icons/wedding-ring-pink.svg">
+      <publishTime>02/23/2019 15:26:51</publishTime>
+    </File>
+    <File Include="Content/Images/icons/wedding-ring.svg">
+      <publishTime>05/12/2018 20:43:16</publishTime>
+    </File>
+    <File Include="Content/Images/logo/streetEats.png">
+      <publishTime>04/12/2018 14:49:39</publishTime>
+    </File>
+    <File Include="Content/Images/menu/front/front.jpg">
+      <publishTime>12/16/2018 17:48:17</publishTime>
+    </File>
+    <File Include="Content/Images/menu/pages/1.jpg">
+      <publishTime>12/16/2018 17:48:35</publishTime>
+    </File>
+    <File Include="Content/Images/menu/pages/2.jpg">
+      <publishTime>12/16/2018 17:48:48</publishTime>
+    </File>
+    <File Include="Content/Images/menu/pages/3.jpg">
+      <publishTime>12/16/2018 17:49:05</publishTime>
+    </File>
+    <File Include="Content/Images/menu/pages/chalkboard-black.jpg">
+      <publishTime>11/09/2012 14:59:30</publishTime>
+    </File>
+    <File Include="Content/Images/news/news1.jpg">
+      <publishTime>01/24/2019 21:09:15</publishTime>
+    </File>
+    <File Include="Content/Images/news/news2.jpg">
+      <publishTime>03/06/2019 21:51:42</publishTime>
+    </File>
+    <File Include="Content/Images/Slides/corporate.png">
+      <publishTime>02/27/2019 21:16:42</publishTime>
+    </File>
+    <File Include="Content/Images/Slides/market.jpg">
+      <publishTime>02/04/2019 22:02:03</publishTime>
+    </File>
+    <File Include="Content/Images/Slides/wedding.jpg">
+      <publishTime>01/30/2019 21:22:05</publishTime>
+    </File>
+    <File Include="Content/Images/social/Facebook.png">
+      <publishTime>04/18/2018 04:23:48</publishTime>
+    </File>
+    <File Include="Content/Images/social/Twitter.png">
+      <publishTime>07/07/2016 12:41:56</publishTime>
+    </File>
+    <File Include="Content/Images/wedding/arrow1.png">
+      <publishTime>02/18/2019 21:17:56</publishTime>
+    </File>
+    <File Include="Content/Images/wedding/arrow2.png">
+      <publishTime>02/18/2019 21:18:40</publishTime>
+    </File>
+    <File Include="Content/Images/wedding/chalkboard-black.jpg">
+      <publishTime>11/09/2012 14:59:30</publishTime>
+    </File>
+    <File Include="Content/Images/wedding/cubans.png">
+      <publishTime>02/18/2019 18:41:28</publishTime>
+    </File>
+    <File Include="Content/Images/wedding/flower.png">
+      <publishTime>02/18/2019 21:31:26</publishTime>
+    </File>
+    <File Include="Content/Images/wedding/fries.png">
+      <publishTime>02/18/2019 18:41:46</publishTime>
+    </File>
+    <File Include="Content/Images/wedding/frontPage1.png">
+      <publishTime>03/10/2019 19:12:02</publishTime>
+    </File>
+    <File Include="Content/Images/wedding/frontPage2.png">
+      <publishTime>03/10/2019 20:26:18</publishTime>
+    </File>
+    <File Include="Content/Images/wedding/gyozatacos.png">
+      <publishTime>02/18/2019 18:42:12</publishTime>
+    </File>
+    <File Include="Content/Images/wedding/laksa.png">
+      <publishTime>03/11/2019 20:52:26</publishTime>
+    </File>
+    <File Include="Content/Images/wedding/stickybaobun.png">
+      <publishTime>02/18/2019 18:42:34</publishTime>
+    </File>
+    <File Include="Content/Images/wedding/title.png">
+      <publishTime>02/18/2019 21:19:15</publishTime>
+    </File>
+    <File Include="Content/Images/wedding/vietnese.png">
+      <publishTime>03/11/2019 20:35:41</publishTime>
+    </File>
+    <File Include="Content/Images/wedding/wafers.png">
+      <publishTime>02/18/2019 18:39:27</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>02/04/2019 20:54:12</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>04/12/2018 15:14:56</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/12/2018 15:15:01</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/12/2018 15:15:01</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/12/2018 15:15:01</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/12/2018 15:15:01</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>04/12/2018 15:15:01</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/12/2018 15:14:56</publishTime>
+    </File>
+    <File Include="newscontent/text/news1.txt">
+      <publishTime>03/06/2019 20:54:00</publishTime>
+    </File>
+    <File Include="newscontent/text/news2.txt">
+      <publishTime>03/06/2019 20:54:24</publishTime>
+    </File>
+    <File Include="Scripts/baguetteBox.min.js">
+      <publishTime>11/28/2018 07:24:23</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>04/12/2018 15:15:01</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>04/12/2018 15:15:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>04/12/2018 15:15:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>04/12/2018 15:15:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.map">
+      <publishTime>04/12/2018 15:15:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.js">
+      <publishTime>04/12/2018 15:15:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.js">
+      <publishTime>04/12/2018 15:15:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.map">
+      <publishTime>04/12/2018 15:15:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>04/12/2018 15:15:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>04/12/2018 15:15:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>04/12/2018 15:15:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>04/12/2018 15:15:09</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>04/12/2018 15:15:08</publishTime>
+    </File>
+    <File Include="Scripts/pages/1.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/10.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/11.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/12.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/13.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/14.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/15.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/16.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/17.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/18.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/19.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/2.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/20.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/21.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/22.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pages/23.png">
+      <publishTime>12/19/2018 21:01:57</publishTime>
+    </File>
+    <File Include="Scripts/pages/24.png">
+      <publishTime>12/19/2018 21:01:57</publishTime>
+    </File>
+    <File Include="Scripts/pages/25.png">
+      <publishTime>12/19/2018 21:01:57</publishTime>
+    </File>
+    <File Include="Scripts/pages/3.png">
+      <publishTime>12/19/2018 21:01:57</publishTime>
+    </File>
+    <File Include="Scripts/pages/4.png">
+      <publishTime>12/19/2018 21:01:57</publishTime>
+    </File>
+    <File Include="Scripts/pages/5.png">
+      <publishTime>12/19/2018 21:01:57</publishTime>
+    </File>
+    <File Include="Scripts/pages/6.png">
+      <publishTime>12/19/2018 21:01:57</publishTime>
+    </File>
+    <File Include="Scripts/pages/7.png">
+      <publishTime>12/19/2018 21:01:57</publishTime>
+    </File>
+    <File Include="Scripts/pages/8.png">
+      <publishTime>12/19/2018 21:01:57</publishTime>
+    </File>
+    <File Include="Scripts/pages/9.png">
+      <publishTime>12/19/2018 21:01:57</publishTime>
+    </File>
+    <File Include="Scripts/pics/covers.jpg">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pics/covers.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pics/left-border.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pics/loader.gif">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pics/preview.jpg">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pics/right-border.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pics/tab-hover.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pics/tab-off.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/pics/tab-on.png">
+      <publishTime>12/19/2018 21:01:56</publishTime>
+    </File>
+    <File Include="Scripts/streeteats-1.0.js">
+      <publishTime>03/13/2019 19:35:49</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/changelog.txt">
+      <publishTime>11/26/2012 06:17:02</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/extras/jGestures-license.txt">
+      <publishTime>04/06/2012 02:50:18</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/extras/jgestures.min.js">
+      <publishTime>04/06/2012 02:51:44</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/extras/jquery-ui-1.8.20.custom.min.js">
+      <publishTime>05/24/2012 19:56:05</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/extras/jquery.min.1.7.js">
+      <publishTime>04/12/2011 15:52:33</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/extras/jquery.mousewheel.min.js">
+      <publishTime>09/11/2011 23:56:28</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/extras/modernizr.2.5.3.min.js">
+      <publishTime>05/29/2012 03:32:10</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/lib/compress.sh">
+      <publishTime>07/12/2012 18:30:14</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/lib/hash.js">
+      <publishTime>05/31/2012 19:51:51</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/lib/scissor.js">
+      <publishTime>06/15/2012 01:21:55</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/lib/scissor.min.js">
+      <publishTime>07/12/2012 18:30:11</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/lib/turn.html4.js">
+      <publishTime>08/10/2012 21:56:17</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/lib/turn.html4.min.js">
+      <publishTime>07/12/2012 18:30:08</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/lib/turn.js">
+      <publishTime>12/16/2018 21:25:36</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/lib/turn.min.js">
+      <publishTime>07/12/2012 18:30:06</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/lib/zoom.js">
+      <publishTime>09/23/2012 03:21:27</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/lib/zoom.min.js">
+      <publishTime>07/12/2012 18:30:10</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/css/basic.css">
+      <publishTime>08/08/2012 21:18:40</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/index.html">
+      <publishTime>11/26/2012 04:43:44</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/js/basic.js">
+      <publishTime>06/17/2012 05:23:12</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/pages/1.jpg">
+      <publishTime>06/07/2012 05:20:13</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/pages/10.jpg">
+      <publishTime>06/07/2012 05:23:50</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/pages/11.jpg">
+      <publishTime>06/07/2012 05:24:12</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/pages/12.jpg">
+      <publishTime>06/07/2012 05:24:34</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/pages/2.jpg">
+      <publishTime>06/07/2012 05:20:39</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/pages/3.jpg">
+      <publishTime>06/07/2012 05:21:00</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/pages/4.jpg">
+      <publishTime>06/07/2012 05:21:16</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/pages/5.jpg">
+      <publishTime>06/07/2012 05:21:39</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/pages/6.jpg">
+      <publishTime>06/07/2012 05:22:12</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/pages/7.jpg">
+      <publishTime>06/07/2012 05:22:35</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/pages/8.jpg">
+      <publishTime>06/07/2012 05:22:55</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/basic/pages/9.jpg">
+      <publishTime>06/07/2012 05:23:27</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/css/docs.css">
+      <publishTime>08/08/2012 21:19:19</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/css/jquery.ui.css">
+      <publishTime>06/07/2012 21:00:17</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/css/jquery.ui.html4.css">
+      <publishTime>06/07/2012 16:43:30</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/index.html">
+      <publishTime>11/26/2012 07:17:36</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/js/docs.js">
+      <publishTime>08/08/2012 21:17:13</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/1.png">
+      <publishTime>06/06/2012 03:03:54</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/10.png">
+      <publishTime>06/04/2012 00:33:08</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/11.png">
+      <publishTime>06/04/2012 00:33:24</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/12.png">
+      <publishTime>06/04/2012 00:33:59</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/13.png">
+      <publishTime>06/04/2012 00:34:24</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/14.png">
+      <publishTime>06/04/2012 00:34:43</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/15.png">
+      <publishTime>06/04/2012 00:35:02</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/16.png">
+      <publishTime>06/04/2012 00:35:17</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/17.png">
+      <publishTime>06/04/2012 00:35:31</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/18.png">
+      <publishTime>06/04/2012 00:36:01</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/19.png">
+      <publishTime>06/04/2012 00:36:17</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/2.png">
+      <publishTime>06/04/2012 00:38:47</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/20.png">
+      <publishTime>06/04/2012 00:36:35</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/21.png">
+      <publishTime>06/04/2012 00:37:01</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/22.png">
+      <publishTime>06/04/2012 00:37:23</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/23.png">
+      <publishTime>06/04/2012 00:37:45</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/24.png">
+      <publishTime>06/04/2012 00:38:01</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/25.png">
+      <publishTime>06/04/2012 00:38:17</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/3.png">
+      <publishTime>06/04/2012 00:30:38</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/4.png">
+      <publishTime>06/04/2012 00:31:07</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/5.png">
+      <publishTime>06/04/2012 00:31:27</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/6.png">
+      <publishTime>06/04/2012 00:31:49</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/7.png">
+      <publishTime>06/04/2012 00:32:07</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/8.png">
+      <publishTime>06/04/2012 00:32:29</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pages/9.png">
+      <publishTime>06/04/2012 00:32:51</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pics/covers.jpg">
+      <publishTime>06/06/2012 20:03:35</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pics/covers.png">
+      <publishTime>06/07/2012 00:34:53</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pics/left-border.png">
+      <publishTime>06/05/2012 17:26:31</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pics/loader.gif">
+      <publishTime>04/02/2012 04:33:18</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pics/preview.jpg">
+      <publishTime>06/06/2012 00:31:30</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pics/right-border.png">
+      <publishTime>06/05/2012 17:24:33</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pics/tab-hover.png">
+      <publishTime>06/05/2012 23:16:17</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pics/tab-off.png">
+      <publishTime>06/05/2012 22:40:34</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/docs/pics/tab-on.png">
+      <publishTime>06/05/2012 23:11:04</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/double-page/css/double-page.css">
+      <publishTime>09/26/2012 22:03:04</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/double-page/index.html">
+      <publishTime>11/26/2012 04:44:10</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/double-page/pages/1.jpg">
+      <publishTime>09/26/2012 21:32:43</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/double-page/pages/2.jpg">
+      <publishTime>09/26/2012 21:32:48</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/double-page/pages/3.jpg">
+      <publishTime>09/26/2012 21:32:52</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/double-page/pages/4.jpg">
+      <publishTime>09/26/2012 21:32:55</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/double-page/pages/5.jpg">
+      <publishTime>09/26/2012 21:32:58</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/double-page/pages/6.jpg">
+      <publishTime>09/26/2012 21:33:01</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/double-page/pages/7.jpg">
+      <publishTime>09/26/2012 21:33:07</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/css/jquery.ui.css">
+      <publishTime>09/12/2012 17:29:48</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/css/jquery.ui.html4.css">
+      <publishTime>06/07/2012 16:43:30</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/css/magazine.css">
+      <publishTime>09/12/2012 17:15:08</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/index.html">
+      <publishTime>11/26/2012 05:22:15</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/js/magazine.js">
+      <publishTime>09/12/2012 17:42:20</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/1-large.jpg">
+      <publishTime>06/16/2012 01:00:38</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/1-regions.json">
+      <publishTime>06/18/2012 04:01:44</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/1-thumb.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/1.jpg">
+      <publishTime>06/07/2012 04:38:47</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/10-large.jpg">
+      <publishTime>06/18/2012 01:00:40</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/10-regions.json">
+      <publishTime>06/18/2012 04:54:05</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/10-thumb.jpg">
+      <publishTime>06/17/2012 04:38:10</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/10.jpg">
+      <publishTime>06/18/2012 01:09:08</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/11-large.jpg">
+      <publishTime>06/18/2012 01:05:57</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/11-regions.json">
+      <publishTime>06/18/2012 04:55:33</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/11-thumb.jpg">
+      <publishTime>06/17/2012 04:38:33</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/11.jpg">
+      <publishTime>06/18/2012 01:07:11</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/12-large.jpg">
+      <publishTime>06/16/2012 01:04:33</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/12-regions.json">
+      <publishTime>06/18/2012 04:55:53</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/12-thumb.jpg">
+      <publishTime>06/17/2012 04:38:55</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/12.jpg">
+      <publishTime>06/18/2012 01:10:23</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/2-large.jpg">
+      <publishTime>06/16/2012 01:01:53</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/2-regions.json">
+      <publishTime>07/13/2012 04:19:19</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/2-thumb.jpg">
+      <publishTime>06/17/2012 04:34:20</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/2.jpg">
+      <publishTime>06/07/2012 04:45:08</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/3-large.jpg">
+      <publishTime>06/16/2012 01:02:11</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/3-regions.json">
+      <publishTime>06/18/2012 04:25:23</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/3-thumb.jpg">
+      <publishTime>06/17/2012 04:36:16</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/3.jpg">
+      <publishTime>06/07/2012 04:45:25</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/4-large.jpg">
+      <publishTime>06/16/2012 01:02:33</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/4-regions.json">
+      <publishTime>06/18/2012 04:42:40</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/4-thumb.jpg">
+      <publishTime>06/17/2012 04:36:04</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/4.jpg">
+      <publishTime>06/07/2012 04:45:43</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/5-large.jpg">
+      <publishTime>06/16/2012 01:02:46</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/5-regions.json">
+      <publishTime>06/18/2012 04:42:48</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/5-thumb.jpg">
+      <publishTime>06/17/2012 04:35:32</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/5.jpg">
+      <publishTime>06/07/2012 04:46:01</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/6-large.jpg">
+      <publishTime>06/16/2012 01:03:03</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/6-regions.json">
+      <publishTime>06/18/2012 04:45:04</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/6-thumb.jpg">
+      <publishTime>06/17/2012 04:36:29</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/6.jpg">
+      <publishTime>06/07/2012 04:47:47</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/7-large.jpg">
+      <publishTime>06/16/2012 01:03:12</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/7-regions.json">
+      <publishTime>06/18/2012 04:45:39</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/7-thumb.jpg">
+      <publishTime>06/17/2012 04:36:53</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/7.jpg">
+      <publishTime>06/07/2012 05:07:46</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/8-large.jpg">
+      <publishTime>06/16/2012 01:03:32</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/8-regions.json">
+      <publishTime>06/18/2012 04:50:32</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/8-thumb.jpg">
+      <publishTime>06/17/2012 04:37:10</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/8.jpg">
+      <publishTime>06/07/2012 04:47:00</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/9-large.jpg">
+      <publishTime>06/16/2012 01:03:46</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/9-regions.json">
+      <publishTime>06/18/2012 04:52:34</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/9-thumb.jpg">
+      <publishTime>06/17/2012 04:37:41</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/9.jpg">
+      <publishTime>06/07/2012 04:48:15</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pages/preview.jpg">
+      <publishTime>07/17/2012 04:10:03</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pics/arrows.png">
+      <publishTime>06/07/2012 04:04:46</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pics/loader.gif">
+      <publishTime>04/02/2012 04:33:18</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pics/zoom-icons-editable.png">
+      <publishTime>08/13/2012 06:01:27</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pics/zoom-icons.png">
+      <publishTime>08/13/2012 05:46:53</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/pics/zoom.png">
+      <publishTime>07/14/2012 02:42:29</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/magazine/slider.html">
+      <publishTime>09/14/2012 23:12:34</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/css/jquery.ui.css">
+      <publishTime>09/12/2012 17:31:08</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/css/jquery.ui.html4.css">
+      <publishTime>06/07/2012 16:43:30</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/css/steve-jobs-html4.css">
+      <publishTime>06/04/2012 21:11:28</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/css/steve-jobs.css">
+      <publishTime>12/16/2018 20:02:15</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/fonts/Stempel-Garamond-W01-Roman.woff">
+      <publishTime>05/23/2012 01:24:05</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/index.html">
+      <publishTime>11/26/2012 05:10:53</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/js/steve-jobs.js">
+      <publishTime>09/12/2012 17:43:22</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page10.html">
+      <publishTime>05/31/2012 17:19:30</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page100.html">
+      <publishTime>06/02/2012 23:39:31</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page101.html">
+      <publishTime>06/02/2012 23:35:27</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page102.html">
+      <publishTime>06/02/2012 23:45:48</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page103.html">
+      <publishTime>06/02/2012 23:46:39</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page104.html">
+      <publishTime>06/02/2012 23:48:39</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page105.html">
+      <publishTime>06/02/2012 23:51:39</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page106.html">
+      <publishTime>06/05/2012 00:37:17</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page107.html">
+      <publishTime>06/05/2012 00:37:20</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page108.html">
+      <publishTime>06/05/2012 00:37:24</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page109.html">
+      <publishTime>06/05/2012 00:37:30</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page11.html">
+      <publishTime>06/04/2012 18:42:15</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page110.html">
+      <publishTime>06/03/2012 00:28:29</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page12.html">
+      <publishTime>05/31/2012 20:47:46</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page13.html">
+      <publishTime>06/04/2012 02:33:28</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page14.html">
+      <publishTime>05/31/2012 23:26:37</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page15.html">
+      <publishTime>06/02/2012 18:06:24</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page16.html">
+      <publishTime>05/31/2012 22:12:31</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page17.html">
+      <publishTime>06/02/2012 18:06:18</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page18.html">
+      <publishTime>05/31/2012 22:51:08</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page19.html">
+      <publishTime>06/02/2012 22:14:51</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page20.html">
+      <publishTime>06/01/2012 03:32:02</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page21.html">
+      <publishTime>06/01/2012 03:32:22</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page22.html">
+      <publishTime>06/02/2012 18:06:09</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page23.html">
+      <publishTime>06/01/2012 00:25:12</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page24.html">
+      <publishTime>06/02/2012 18:06:00</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page25.html">
+      <publishTime>06/01/2012 00:38:19</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page26.html">
+      <publishTime>06/01/2012 02:51:40</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page27.html">
+      <publishTime>06/02/2012 18:08:48</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page28.html">
+      <publishTime>06/02/2012 18:09:08</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page29.html">
+      <publishTime>06/02/2012 18:05:45</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page30.html">
+      <publishTime>06/01/2012 03:00:05</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page31.html">
+      <publishTime>06/02/2012 18:05:13</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page32.html">
+      <publishTime>06/01/2012 03:30:07</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page33.html">
+      <publishTime>06/01/2012 03:52:22</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page34.html">
+      <publishTime>06/01/2012 03:56:35</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page35.html">
+      <publishTime>06/01/2012 03:59:38</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page36.html">
+      <publishTime>06/02/2012 18:04:51</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page37.html">
+      <publishTime>06/02/2012 18:04:45</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page38.html">
+      <publishTime>06/01/2012 04:16:48</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page39.html">
+      <publishTime>06/02/2012 18:04:39</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page40.html">
+      <publishTime>06/01/2012 04:27:53</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page41.html">
+      <publishTime>06/02/2012 18:04:33</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page42.html">
+      <publishTime>06/01/2012 04:33:48</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page43.html">
+      <publishTime>06/03/2012 05:21:23</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page44.html">
+      <publishTime>06/02/2012 06:03:48</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page45.html">
+      <publishTime>06/02/2012 06:06:49</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page46.html">
+      <publishTime>06/02/2012 06:07:36</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page47.html">
+      <publishTime>06/02/2012 18:04:18</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page48.html">
+      <publishTime>06/01/2012 22:09:45</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page49.html">
+      <publishTime>06/02/2012 18:04:10</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page5.html">
+      <publishTime>06/07/2012 20:14:21</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page50.html">
+      <publishTime>06/01/2012 23:50:45</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page51.html">
+      <publishTime>06/02/2012 18:04:00</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page52.html">
+      <publishTime>06/02/2012 00:20:14</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page53.html">
+      <publishTime>06/02/2012 18:03:49</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page54.html">
+      <publishTime>06/02/2012 00:27:22</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page55.html">
+      <publishTime>06/02/2012 00:30:52</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page56.html">
+      <publishTime>06/02/2012 18:03:42</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page57.html">
+      <publishTime>06/02/2012 01:06:35</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page58.html">
+      <publishTime>06/02/2012 01:33:03</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page59.html">
+      <publishTime>06/02/2012 01:46:49</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page6.html">
+      <publishTime>05/23/2012 00:23:38</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page60.html">
+      <publishTime>06/02/2012 02:30:33</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page61.html">
+      <publishTime>06/02/2012 18:03:33</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page62.html">
+      <publishTime>06/02/2012 03:24:22</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page63.html">
+      <publishTime>06/02/2012 18:03:22</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page64.html">
+      <publishTime>06/02/2012 04:15:08</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page65.html">
+      <publishTime>06/02/2012 18:53:45</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page66.html">
+      <publishTime>06/02/2012 04:24:30</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page67.html">
+      <publishTime>06/02/2012 16:31:45</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page68.html">
+      <publishTime>06/02/2012 20:22:44</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page69.html">
+      <publishTime>06/02/2012 21:09:45</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page7.html">
+      <publishTime>05/23/2012 03:40:40</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page70.html">
+      <publishTime>06/02/2012 20:41:05</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page71.html">
+      <publishTime>06/02/2012 20:44:07</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page72.html">
+      <publishTime>06/02/2012 20:56:44</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page73.html">
+      <publishTime>06/07/2012 16:24:42</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page74.html">
+      <publishTime>06/02/2012 21:05:11</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page75.html">
+      <publishTime>06/02/2012 21:09:18</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page76.html">
+      <publishTime>06/02/2012 21:11:37</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page77.html">
+      <publishTime>06/02/2012 21:15:48</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page78.html">
+      <publishTime>06/02/2012 21:31:59</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page79.html">
+      <publishTime>06/02/2012 21:36:38</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page8.html">
+      <publishTime>05/24/2012 17:47:36</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page80.html">
+      <publishTime>06/02/2012 21:37:35</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page81.html">
+      <publishTime>06/02/2012 21:40:13</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page82.html">
+      <publishTime>06/02/2012 21:48:29</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page83.html">
+      <publishTime>06/02/2012 21:51:24</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page84.html">
+      <publishTime>06/02/2012 21:54:16</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page85.html">
+      <publishTime>06/02/2012 22:03:35</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page86.html">
+      <publishTime>06/02/2012 22:04:55</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page87.html">
+      <publishTime>06/02/2012 22:09:34</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page88.html">
+      <publishTime>06/02/2012 22:12:41</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page89.html">
+      <publishTime>06/02/2012 22:17:15</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page9.html">
+      <publishTime>06/06/2012 05:57:43</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page90.html">
+      <publishTime>06/02/2012 22:27:04</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page91.html">
+      <publishTime>06/02/2012 22:29:33</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page92.html">
+      <publishTime>06/02/2012 22:33:07</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page93.html">
+      <publishTime>06/02/2012 22:35:06</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page94.html">
+      <publishTime>06/02/2012 22:38:14</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page95.html">
+      <publishTime>06/02/2012 22:41:24</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page96.html">
+      <publishTime>06/02/2012 22:43:07</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page97.html">
+      <publishTime>06/05/2012 05:07:43</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page98.html">
+      <publishTime>06/02/2012 23:26:40</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/page99.html">
+      <publishTime>06/02/2012 23:31:15</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pages/preview.jpg">
+      <publishTime>06/03/2012 00:50:56</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/05.jpg">
+      <publishTime>05/31/2012 23:40:50</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/06.jpg">
+      <publishTime>05/31/2012 23:52:40</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/07.jpg">
+      <publishTime>06/01/2012 00:08:34</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/08.jpg">
+      <publishTime>06/01/2012 01:24:58</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/09.jpg">
+      <publishTime>06/01/2012 01:48:00</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/10.jpg">
+      <publishTime>06/01/2012 04:19:42</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/11.jpg">
+      <publishTime>06/01/2012 05:05:20</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/12.jpg">
+      <publishTime>06/01/2012 05:12:18</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/13.jpg">
+      <publishTime>06/01/2012 05:20:06</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/14.jpg">
+      <publishTime>06/01/2012 05:28:56</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/15.jpg">
+      <publishTime>06/01/2012 05:40:30</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/16.jpg">
+      <publishTime>06/01/2012 22:12:52</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/17.jpg">
+      <publishTime>06/01/2012 22:16:20</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/18.jpg">
+      <publishTime>06/01/2012 22:24:26</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/19.jpg">
+      <publishTime>06/01/2012 23:12:18</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/20.jpg">
+      <publishTime>06/02/2012 00:49:32</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/21.jpg">
+      <publishTime>06/02/2012 01:18:06</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/22.jpg">
+      <publishTime>06/02/2012 02:00:10</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/23.jpg">
+      <publishTime>06/02/2012 02:37:36</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/24.jpg">
+      <publishTime>06/02/2012 04:19:58</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/24.png">
+      <publishTime>06/02/2012 04:19:00</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/25.jpg">
+      <publishTime>06/02/2012 04:27:54</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/26.jpg">
+      <publishTime>06/02/2012 05:16:58</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/27.jpg">
+      <publishTime>06/02/2012 05:26:28</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/29.jpg">
+      <publishTime>06/02/2012 21:27:14</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/30.jpg">
+      <publishTime>06/02/2012 21:36:02</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/31.jpg">
+      <publishTime>06/02/2012 21:59:56</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/32.jpg">
+      <publishTime>06/02/2012 22:03:30</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/33.jpg">
+      <publishTime>06/02/2012 22:13:32</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/34.jpg">
+      <publishTime>06/02/2012 22:35:24</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/35.jpg">
+      <publishTime>06/02/2012 22:44:38</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/36.jpg">
+      <publishTime>06/02/2012 22:49:58</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/37.jpg">
+      <publishTime>06/02/2012 22:57:00</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/38.jpg">
+      <publishTime>06/02/2012 23:01:48</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/39.jpg">
+      <publishTime>06/02/2012 23:07:36</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/40.jpg">
+      <publishTime>06/02/2012 23:14:06</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/41.jpg">
+      <publishTime>06/02/2012 23:25:30</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/42.jpg">
+      <publishTime>06/02/2012 23:31:28</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/43.jpg">
+      <publishTime>06/02/2012 23:37:02</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/44.jpg">
+      <publishTime>06/02/2012 23:41:20</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/45.jpg">
+      <publishTime>06/03/2012 00:27:58</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/46.jpg">
+      <publishTime>06/03/2012 00:30:20</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/47.jpg">
+      <publishTime>06/03/2012 00:39:16</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/48.jpg">
+      <publishTime>06/03/2012 00:50:22</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/book-covers.jpg">
+      <publishTime>06/07/2012 02:39:14</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/book-covers.png">
+      <publishTime>05/13/2012 18:11:06</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/books.jpg">
+      <publishTime>06/06/2012 06:40:50</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/collegue.jpg">
+      <publishTime>05/31/2012 23:15:36</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/gradient-page-left.jpg">
+      <publishTime>07/12/2012 06:05:16</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/gradient-page-right.jpg">
+      <publishTime>07/12/2012 06:08:30</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/highschool.jpg">
+      <publishTime>06/02/2012 19:45:54</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/highschool2.jpg">
+      <publishTime>05/31/2012 22:21:44</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/loader.gif">
+      <publishTime>04/02/2012 05:33:18</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/pages-depth.png">
+      <publishTime>05/01/2012 01:11:38</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/preview.jpg">
+      <publishTime>06/03/2012 01:50:56</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/spine.png">
+      <publishTime>06/05/2012 05:23:12</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/thumb.png">
+      <publishTime>05/04/2012 04:05:26</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/samples/steve-jobs/pics/young.jpg">
+      <publishTime>06/04/2012 19:40:06</publishTime>
+    </File>
+    <File Include="Scripts/turnjs4/turnjs4-api-docs.pdf">
+      <publishTime>11/06/2012 21:40:59</publishTime>
+    </File>
+    <File Include="Views/About/Index.cshtml">
+      <publishTime>02/15/2019 21:49:35</publishTime>
+    </File>
+    <File Include="Views/Contact/Index.cshtml">
+      <publishTime>02/23/2019 16:07:28</publishTime>
+    </File>
+    <File Include="Views/Corporate/Index.cshtml">
+      <publishTime>02/27/2019 21:02:27</publishTime>
+    </File>
+    <File Include="Views/Gallery/Index.cshtml">
+      <publishTime>02/15/2019 23:18:39</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>04/12/2018 15:14:56</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>02/19/2019 21:30:39</publishTime>
+    </File>
+    <File Include="Views/Markets/Index.cshtml">
+      <publishTime>02/23/2019 16:08:33</publishTime>
+    </File>
+    <File Include="Views/News/Index.cshtml">
+      <publishTime>03/06/2019 21:56:13</publishTime>
+    </File>
+    <File Include="Views/Parties/Index.cshtml">
+      <publishTime>02/23/2019 16:08:16</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>04/12/2018 15:14:56</publishTime>
+    </File>
+    <File Include="Views/Shared/_ContactForm.cshtml">
+      <publishTime>02/22/2019 21:45:57</publishTime>
+    </File>
+    <File Include="Views/Shared/_FeedbackForm.cshtml">
+      <publishTime>02/22/2019 21:39:13</publishTime>
+    </File>
+    <File Include="Views/Shared/_HeaderNavBar.cshtml">
+      <publishTime>02/23/2019 18:09:05</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>03/13/2019 19:31:30</publishTime>
+    </File>
+    <File Include="Views/Shared/_SocalLinks.cshtml">
+      <publishTime>01/17/2019 23:02:02</publishTime>
+    </File>
+    <File Include="Views/Shared/_weddingLayout.cshtml">
+      <publishTime>02/21/2019 20:54:45</publishTime>
+    </File>
+    <File Include="Views/testimonies/Index.cshtml">
+      <publishTime>02/20/2019 20:35:38</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>04/12/2018 15:14:56</publishTime>
+    </File>
+    <File Include="Views/Weddings/Index.cshtml">
+      <publishTime>03/11/2019 21:58:16</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>04/12/2018 15:14:56</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/02/2019 22:28:03</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

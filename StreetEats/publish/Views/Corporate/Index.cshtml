@@ -1,0 +1,48 @@
+﻿@model StreetEats.Models.Corporate
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="CorporateTitle" class="pageTitles">
+    <h1>Corporate</h1>
+</div>
+<div class= "topContainer topCorporateContainer">
+    <div class="corporateContainer">
+        <div class="corporateRow">
+            <h3>
+                <b>Build Your Own Box</b>
+            </h3>
+        </div>
+        <div class="corporateRow">
+            <div class="platterDescription">
+                @Model.corporatePlatterDescrip1
+            </div>
+        </div>
+        <div class="corporateRow">
+            <div class="platterDescription">
+                @Model.corporatePlatterDescrip2
+            </div>
+        </div>
+        <div class="corporateRow">
+            <div class="corporatecolumnImg">
+                <img src="@Model.corporatePlatter" class="corporatePlatter"/>
+            </div>
+            <div class="corporatecolumnDescrip">
+
+                @foreach (var food in Model.corporateFoodList)
+                {
+                <div class="foodSections">
+                    <div>
+                        <b>@food.foodName</b>
+                    </div>
+                    <div>
+                        @food.description
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

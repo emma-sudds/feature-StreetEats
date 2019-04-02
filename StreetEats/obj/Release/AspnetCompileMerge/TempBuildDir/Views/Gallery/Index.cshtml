@@ -1,0 +1,80 @@
+﻿@model StreetEats.Models.Gallery
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="GalleryTitle" class="pageTitles">
+    <h1>Gallery</h1>
+</div>
+
+<section class="gallerySection">
+    <div class="row galleryNavRow">
+        <!-- Grid column -->
+        <div class="col-md-12 d-flex justify-content-center mb-5 galleryNav">
+            @foreach (var category in Model.galleryCategories)
+            {
+                string selectedClass = "";
+                if (@category == "all")
+                {
+                    selectedClass = "filtered";
+                }
+                <button type="button" class="btn btn-outline-black waves-effect filter @selectedClass" data-rel="@category">@category</button>
+            }
+
+        </div>
+    </div>
+    <div class="gallery container gallery-container topContainer" id="gallery">
+
+        <div class="tz-gallery">
+            <div class="row">
+
+                @foreach (var fileName in Model.allPictures)
+                {
+                    <div class="col-sm-6 col-md-4 all">
+                        <a class="lightbox" href="@fileName">
+                            <img class="img-fluid" src="@fileName" />
+                        </a>
+                    </div>
+                }
+
+                @foreach (var fileName in Model.foodPictures)
+                {
+                    <div class="col-sm-6 col-md-4 food">
+                        <a class="lightbox" href="@fileName">
+                            <img class="img-fluid" src="@fileName" />
+                        </a>
+                    </div>
+                }
+                
+            @foreach (var fileName in Model.eventPictures)
+            {
+            <div class="col-sm-6 col-md-4 event">
+                <a class="lightbox" href="@fileName">
+                    <img class="img-fluid" src="@fileName" />
+                </a>
+            </div>
+            }
+
+            @foreach (var fileName in Model.marketPictures)
+            {
+            <div class="col-sm-6 col-md-4 market">
+                <a class="lightbox" href="@fileName">
+                    <img class="img-fluid" src="@fileName" />
+                </a>
+            </div>
+            }
+
+            @foreach (var fileName in Model.generalPictures)
+            {
+            <div class="col-sm-6 col-md-4 general">
+                <a class="lightbox" href="@fileName">
+                    <img class="img-fluid" src="@fileName" />
+                </a>
+            </div>
+            }
+            </div>
+        </div>
+        </div>
+</section>
