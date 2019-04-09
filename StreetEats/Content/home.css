@@ -1,0 +1,84 @@
+﻿#homeHireUs, #homeTestimonies {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+    margin-right: 2vw;
+    -webkit-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
+    -moz-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
+    box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
+    font-size: 18px;
+    background: url(/Content/images/background/cream_dust.png) repeat 0 0;
+}
+
+#homeTestimonies {
+    margin-left: 2vw;
+}
+
+#homeHireUs > p, #homeHireUs > h3, #homeTestimonies > p, #homeTestimonies > h3 {
+    word-break: break-word;
+}
+
+.firstSlide {
+    background: url('/Content/images/slides/wedding.jpg');
+    background-repeat: no-repeat;
+}
+
+.secondSlide {
+    background: url('/Content/images/slides/corporate.png');
+    background-repeat: no-repeat;
+}
+
+.thirdSlide {
+    background: url('/Content/images/slides/market.jpg');
+    background-repeat: no-repeat;
+}
+
+#indexCarousel {
+    -webkit-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
+    -moz-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
+    box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
+    overflow: hidden;
+}
+
+#homeTestimonies > p {
+    border-radius: 3px;
+    position: relative; /*  <--- */
+    font-style: italic;
+    text-align: center;
+    padding: 0.3rem 1.2rem;
+    width: 90%; /* create space for the quotes */
+    color: #4a4a4a;
+    margin: 1rem auto 2rem;
+    color: #4a4a4a;
+    background: #E8E8E8;
+    font-size: 15px;
+}
+/* -- create the quotation marks -- */
+#homeTestimonies > p:before,
+#homeTestimonies > p:after {
+    font-family: FontAwesome;
+    position: absolute;
+    /* -- inside the relative position of blockquote -- */
+    top: 13px;
+    color: #E8E8E8;
+    font-size: 34px;
+}
+
+#homeTestimonies > p:before {
+    content: "\f10d";
+    margin-right: 13px;
+    right: 100%;
+}
+
+#homeTestimonies > p:after {
+    content: "\f10e";
+    margin-left: 13px;
+    left: 100%;
+}
+#aboutLink, #aboutUsButton, #testimoniesLink {
+    background-color: #a2356a;
+    border-color: #872c58;
+    color: #fff;
+    text-decoration: none;
+}

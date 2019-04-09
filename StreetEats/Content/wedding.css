@@ -1,0 +1,116 @@
+﻿.weddingBody {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    background-image: url('/Content/Images/background/wedding.jpeg')
+}
+.weddingMenu {
+    background-image: url('/Content/Images/menu/pages/chalkboard-black.jpg');
+    background-repeat: no-repeat;
+}
+#weddingCarousel {
+    margin: auto;
+    margin-top: 41px;
+    width: 38%;
+}
+#weddingCarousel.carousel-inner {
+    height: 700px;
+}
+#weddingCarousel .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    right: 19px;
+}
+#weddingCarousel .glyphicon-chevron-left, .carousel-control .icon-prev {
+    left: 7.5px;
+}
+#weddingCarousel > .carousel-inner {
+    margin-left: 19%;
+}
+.weddingCarouselInner {
+    width: 58%;
+}
+.weddingMenuPics {
+    width: 60%;
+}
+.weddingFoodRow {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    display: flex;
+    border-style: solid;
+    border-width: thin;
+    border-color: white;
+    padding: 2%
+}
+.weddingFrontPageText {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+    text-align: center;
+    font-size: 17px;
+}
+.weddingMenuInfo {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    display: flex;
+    padding: 2%;
+    text-align: right;
+}
+.weddingMenu {
+    padding-top: 0.5%;
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.item.weddingMenu {
+    height: 800px;
+}
+.arrow {
+    width: 184px;
+    height: 24px;
+    margin: auto;
+    margin-right: 20%;
+    margin-bottom: 3%;
+}
+.flower {
+    width: 87px;
+    height: 88px;
+    float: left;
+}
+.bottomWeddingInfo {
+    bottom: 0;
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+.weddingContact {
+    text-align: right;
+    float: left;
+    width: 50%;
+}
+.weddingFlower {
+    float: left;
+    width: 50%;
+}
+.weddingContact {
+    float: left;
+    width: 70%;
+    height: 88px;
+}
+.flowerPic {
+    float: left;
+    width: 30%;
+}
+.weddingContactP {
+    text-align: center;
+    margin-top: 8%;
+}

@@ -5,6 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@Styles.Render("~/bundle/css/testimonies")
 <div class="pageTitles">
     <h1>Testimonies</h1>
 </div>
@@ -15,19 +16,19 @@
         {
             <div class="categoryHeader">
                 <h2 class="testimonyCategory">@category.categoryName</h2>
-                <img src="@category.categoryImage" class="categoryImage"/>
+                <img src="@category.categoryImage" class="categoryImage" />
             </div>
             <div class="categorySection">
                 @foreach (var testimonie in Model.testimonies)
                 {
                     if (testimonie.testimonyCategory == category.categoryName)
                     {
-                    <div class="box1 speechBubble">
-                        @testimonie.fullTestimonyText
-                    </div>
-                    <div class="testimonyName">
-                        @testimonie.fullTestimonyName
-                    </div>
+                        <div class="box1 speechBubble">
+                            @testimonie.fullTestimonyText
+                        </div>
+                        <div class="testimonyName">
+                            @testimonie.fullTestimonyName
+                        </div>
 
                     }
                 }

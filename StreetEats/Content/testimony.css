@@ -1,0 +1,52 @@
+﻿.box1 {
+    width: 70%;
+    margin: 30px auto;
+    border: 4px solid rgb(162, 53, 106);
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    position: relative;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.speechBubble:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid rgb(162, 53, 106);
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(162, 53, 106);
+    border-bottom: 10px solid transparent;
+    left: 20px;
+    bottom: -23px;
+}
+
+.speechBubble:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    left: 24px;
+    bottom: -13px;
+}
+
+.testimonies, .tweets {
+    width: 50%;
+}
+
+.testimonyName {
+    margin-left: 134px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 1.5%;
+}
+.testimonyCategory {
+    color: rgb(248, 238, 65);
+    padding-top: 1%;
+}

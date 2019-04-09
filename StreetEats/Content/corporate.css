@@ -1,0 +1,46 @@
+﻿.topCorporateContainer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.corporateRow > h3, .corporateRow > .platterDescription {
+    margin: auto;
+}
+
+.corporateRow > h3 {
+    margin-top: 9px;
+}
+
+.corporateRow > .platterDescription {
+    font-size: 18px;
+}
+
+.topCorporateContainer {
+    width: 85%;
+}
+
+.corporatePlatter {
+    width: 100%;
+}
+
+.corporatecolumnImg {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+    max-width: 75%;
+    padding: 0 4px;
+}
+
+.corporatecolumnDescrip {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.corporateRow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 2px;
+}

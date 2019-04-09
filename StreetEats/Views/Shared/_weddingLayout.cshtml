@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/bundle/css/wedding")
     @Scripts.Render("~/bundles/modernizr")
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -21,7 +22,6 @@
     }
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/flipbook")
     @Scripts.Render("~/bundles/streeteats")
     @RenderSection("scripts", required: false)
 </body>

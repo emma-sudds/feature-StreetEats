@@ -26,10 +26,6 @@ namespace StreetEats
                       "~/Scripts/streeteats-1.0.js",
                       "~/Scripts/baguetteBox.min.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/flipbook").Include(
-                      "~/Scripts/turnjs4/lib/turn.js",
-                      "~/Scripts/turnjs4/extras/jquery.mousewheel.min.js"));
-
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
@@ -38,6 +34,16 @@ namespace StreetEats
                       "~/Content/animate.css",
                       "~/Content/fluid-gallery.css",
                       "~/Content/baguetteBox.min.css"));
+            bundles.Add(new StyleBundle("~/bundle/css/wedding").Include(
+                "~/Content/wedding.css"));
+            bundles.Add(new StyleBundle("~/bundle/css/corporate").Include(
+                "~/Content/corporate.css"));
+            bundles.Add(new StyleBundle("~/bundle/css/testimonies").Include(
+                "~/Content/testimony.css"));
+            bundles.Add(new StyleBundle("~/bundle/css/home").Include(
+                "~/Content/home.css"));
+            bundles.Add(new StyleBundle("~/bundle/css/news").Include(
+                "~/Content/news.css"));
         }
     }
 }
