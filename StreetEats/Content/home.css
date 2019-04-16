@@ -82,3 +82,71 @@
     color: #fff;
     text-decoration: none;
 }
+.fPCarouselCaption h3,
+.carousel .icon-container,
+.fPCarouselCaption button {
+    background-color: rgb(162, 53, 106);
+}
+
+.fPCarouselCaption h3 {
+    padding: .5em;
+}
+
+.carousel .icon-container {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 1em;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.fPCarouselBtn {
+    background-color: rgb(162, 53, 106);
+    border-color: #872c58;
+    margin-top: 1em;
+}
+
+/* Animation delays */
+.fPCarouselCaption h3:first-child {
+    animation-delay: 1s;
+}
+
+.fPCarouselCaption h3:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.fPCarouselCaption button {
+    animation-delay: 3s;
+}
+.mb-3.pics.animation.all {
+    padding-top: 8px;
+    padding-left: 8px;
+}
+#weddingLink, #corporateLink, #marketLink {
+    color: #fff;
+    text-decoration: none;
+}
+
+.homeRow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+.homeColumn {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+}
+
+.homeMiddle {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+}
+
+    .homeColumn > div, .homeMiddle > div {
+        height: 700px
+    }

@@ -44,6 +44,10 @@ namespace StreetEats
                 "~/Content/home.css"));
             bundles.Add(new StyleBundle("~/bundle/css/news").Include(
                 "~/Content/news.css"));
+            bundles.Add(new StyleBundle("~/bundle/css/gallery").Include(
+                "~/Content/gallery.css"));
+            bundles.Add(new StyleBundle("~/bundle/css/about").Include(
+                "~/Content/about.css"));
         }
     }
 }

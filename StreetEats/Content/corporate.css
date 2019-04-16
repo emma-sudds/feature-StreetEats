@@ -44,3 +44,10 @@
     flex-wrap: wrap;
     padding: 2px;
 }
+
+.foodSections {
+    padding: 2%;
+    border: 2px solid rgb(162, 53, 106);
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
