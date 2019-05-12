@@ -1,4 +1,12 @@
 ﻿$(function () {
+    createNoty('We use cookies on our website. By continuing to use this website ' +
+        'you consent to their use. For more information on cookies and our ' +
+        'privacy policy click here', 'info');
+    $('.page-alert .close').click(function (e) {
+        e.preventDefault();
+        sessionStorage.Alert = "Confirmed";
+        $(this).closest('.page-alert').slideUp();
+    });
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
@@ -81,6 +89,18 @@ $('#back-to-top').tooltip('show');
         );
         doAnimations($animatingElems);
     });
+
+    function createNoty(message, type) {
+        var html = '<div class="alert alert-' + type + ' alert-dismissable page-alert" style="display:none">';
+        html += '<button type="button" class="close"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>';
+        html += message;
+        html += '</div>';
+        $(html).hide().prependTo('#noty-holder');
+
+        if (sessionStorage.Alert !== 'Confirmed') {
+            $('.page-alert').slideDown();
+        }
+    };
 
     function after_form_submitted(data) {
             $('form#reused_form').hide();

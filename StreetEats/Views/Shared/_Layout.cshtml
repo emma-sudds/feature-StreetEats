@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 <body>
+    <div id="noty-holder"></div>
     @{ Html.RenderPartial("_HeaderNavBar");}
     <div class="container body-content">
         @RenderBody()
@@ -17,7 +18,16 @@
         @{Html.RenderPartial("_FeedbackForm");}
         @{Html.RenderPartial("_ContactForm"); }
         <hr />
-        <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+        <a id="back-to-top"
+           href="#"
+           class="btn btn-primary btn-lg back-to-top"
+           role="button"
+           title="Click to return on the top page"
+           data-toggle="tooltip"
+           data-placement="left">
+            <span class="glyphicon glyphicon-chevron-up">
+            </span>
+        </a>
         <footer></footer>
     </div>
     @Scripts.Render("~/bundles/jquery")
