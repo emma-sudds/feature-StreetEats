@@ -1,7 +1,17 @@
 ﻿$(function () {
+
+    $(".collapsible").click(function () {
+        $(this).next(".content").slideToggle(500);
+        if ($(this).find('span').hasClass('glyphicon-chevron-right')) {
+            $(this).find('span').addClass('glyphicon-chevron-down').removeClass('glyphicon-chevron-right');
+        }
+        else {
+            $(this).find('span').addClass('glyphicon-chevron-right').removeClass('glyphicon-chevron-down');
+        }
+    });
     createNoty('We use cookies on our website. By continuing to use this website ' +
         'you consent to their use. For more information on cookies and our ' +
-        'privacy policy click here', 'info');
+        'privacy policy click <a href="/Privacy">here</a>', 'info');
     $('.page-alert .close').click(function (e) {
         e.preventDefault();
         sessionStorage.Alert = "Confirmed";

@@ -72,6 +72,12 @@
                         <div class="text-center navText">Contact</div>
                     </a>
                 </li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Privacy" ? "active" : "")">
+                    <a href='@Url.Action("Index", "Privacy")'>
+                        <span class="glyphicon glyphicon-lock"></span>
+                        <div class="text-center navText">Privacy</div>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

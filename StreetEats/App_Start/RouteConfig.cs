@@ -37,6 +37,11 @@ namespace StreetEats
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "News", action = "Index", id = UrlParameter.Optional }
                 );
+            routes.MapRoute(
+                name: "Privacy",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Privacy", action = "Index", id = UrlParameter.Optional }
+                );
         }
     }
 }
