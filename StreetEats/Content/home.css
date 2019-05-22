@@ -52,18 +52,20 @@
     margin: 1rem auto 2rem;
     color: #4a4a4a;
     background: #E8E8E8;
-    font-size: 15px;
 }
-/* -- create the quotation marks -- */
-#homeTestimonies > p:before,
-#homeTestimonies > p:after {
-    font-family: FontAwesome;
-    position: absolute;
-    /* -- inside the relative position of blockquote -- */
-    top: 13px;
-    color: #E8E8E8;
-    font-size: 34px;
+.homeSideColumns > p {
+    font-size: 0.77vw;
 }
+    /* -- create the quotation marks -- */
+    #homeTestimonies > p:before,
+    #homeTestimonies > p:after {
+        font-family: FontAwesome;
+        position: absolute;
+        /* -- inside the relative position of blockquote -- */
+        top: 13px;
+        color: #E8E8E8;
+        font-size: 34px;
+    }
 
 #homeTestimonies > p:before {
     content: "\f10d";
@@ -150,3 +152,15 @@
     .homeColumn > div, .homeMiddle > div {
         height: 700px
     }
+.homeSideColumns {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+h3{
+    font-size:1.5vw;
+}
+.showMore{
+    margin-bottom: 3%;
+}

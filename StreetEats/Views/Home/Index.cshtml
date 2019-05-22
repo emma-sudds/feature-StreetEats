@@ -10,16 +10,14 @@
 </div>
 <div class="homeRow">
     <div class="homeColumn">
-        <div id="homeHireUs">
+        <div id="homeHireUs" class="homeSideColumns">
             <h3>@Model.hireUsTitle</h3>
             @foreach (var item in Model.hireUsText)
             {
                 <p>@item</p>
             }
             <h3>@Model.wannaKnowMoreTitle</h3>
-            <div class="text-center">
-                <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("About Us", "Index", "About", null, new { id = "aboutLink" }) </button>
-            </div>
+                <button class="btn btn-primary btn-lg showMore" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("About Us", "Index", "About", null, new { id = "aboutLink" }) </button>
         </div>
     </div>
     <div class="homeMiddle">
@@ -87,16 +85,14 @@
         </div>
     </div>
     <div class="homeColumn">
-        <div id="homeTestimonies">
+        <div id="homeTestimonies" class="homeSideColumns">
             <h3>@Model.homeThirdColumn</h3>
 
             @foreach (var item in Model.testimonyText)
             {
                 <p>@item</p>
             }
-            <div class="text-center">
-                <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("Read More", "Index", "testimonies", null, new { id = "testimoniesLink" }) </button>
-            </div>
+            <button class="btn btn-primary btn-lg showMore" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("Read More", "Index", "testimonies", null, new { id = "testimoniesLink" }) </button>
         </div>
     </div>
 </div>
