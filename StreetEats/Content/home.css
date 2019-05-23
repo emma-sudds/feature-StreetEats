@@ -131,28 +131,22 @@
 }
 
 .homeRow {
-    display: -ms-flexbox; /* IE10 */
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
+    display: -ms-flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
-
 .homeColumn {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
+    display: table-cell;
+    width: 100%;
 }
-
-.homeMiddle {
-    -ms-flex: 50%; /* IE10 */
-    flex: 50%;
-    max-width: 50%;
+.homeSide{
+    width: 60%;
 }
-
-    .homeColumn > div, .homeMiddle > div {
-        height: 700px
-    }
 .homeSideColumns {
+    height: 75vh;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -163,4 +157,7 @@ h3{
 }
 .showMore{
     margin-bottom: 3%;
+}
+.carousel-inner {
+max-height: 100%;
 }

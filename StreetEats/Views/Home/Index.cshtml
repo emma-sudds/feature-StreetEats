@@ -9,7 +9,7 @@
     <h1>StreetEats</h1>
 </div>
 <div class="homeRow">
-    <div class="homeColumn">
+    <div class="homeColumn homeSide">
         <div id="homeHireUs" class="homeSideColumns">
             <h3>@Model.hireUsTitle</h3>
             @foreach (var item in Model.hireUsText)
@@ -20,7 +20,7 @@
                 <button class="btn btn-primary btn-lg showMore" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("About Us", "Index", "About", null, new { id = "aboutLink" }) </button>
         </div>
     </div>
-    <div class="homeMiddle">
+    <div class="homeMiddle homeColumn">
         <div id="indexCarousel">
             <!-- carousel code -->
             <div id="carouselExampleIndicators" class="carousel slide" data-interval="6000">
@@ -84,7 +84,7 @@
 
         </div>
     </div>
-    <div class="homeColumn">
+    <div class="homeColumn homeSide">
         <div id="homeTestimonies" class="homeSideColumns">
             <h3>@Model.homeThirdColumn</h3>
 
