@@ -52,9 +52,7 @@
     margin: 1rem auto 2rem;
     color: #4a4a4a;
     background: #E8E8E8;
-}
-.homeSideColumns > p {
-    font-size: 0.77vw;
+    font-size: 15px;
 }
     /* -- create the quotation marks -- */
     #homeTestimonies > p:before,
@@ -83,6 +81,10 @@
     border-color: #872c58;
     color: #fff;
     text-decoration: none;
+    width: 60%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .fPCarouselCaption h3,
 .carousel .icon-container,
@@ -144,20 +146,37 @@
 }
 .homeSide{
     width: 60%;
+    height:75%;
 }
 .homeSideColumns {
-    height: 75vh;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-}
-h3{
-    font-size:1.5vw;
 }
 .showMore{
     margin-bottom: 3%;
 }
 .carousel-inner {
 max-height: 100%;
+}
+@media screen and (max-width: 992px) {
+    .homeRow {
+        flex-direction: column;
+    }
+        .homeRow > div.homeColumn:nth-child(1) {
+            order: 2;
+        }
+
+        .homeRow > div.homeColumn:nth-child(2) {
+            order: 1;
+        }
+
+        .homeRow > div.homeColumn:nth-child(3) {
+            order: 3;
+        }
+    .homeColumn{
+        margin-top:2%;
+        width:100%;
+    }
 }
