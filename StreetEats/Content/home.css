@@ -1,25 +1,4 @@
-﻿#homeHireUs, #homeTestimonies {
-    font-family: 'Poppins', sans-serif;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 1vh;
-    margin-right: 2vw;
-    -webkit-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
-    -moz-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
-    box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
-    font-size: 18px;
-    background: url(/Content/images/background/cream_dust.png) repeat 0 0;
-}
-
-#homeTestimonies {
-    margin-left: 2vw;
-}
-
-#homeHireUs > p, #homeHireUs > h3, #homeTestimonies > p, #homeTestimonies > h3 {
-    word-break: break-word;
-}
-
-.firstSlide {
+﻿.firstSlide {
     background: url('/Content/images/slides/wedding.jpg');
     background-repeat: no-repeat;
 }
@@ -33,26 +12,16 @@
     background: url('/Content/images/slides/market.jpg');
     background-repeat: no-repeat;
 }
-
-#indexCarousel {
-    -webkit-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
-    -moz-box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
-    box-shadow: 10px 10px 47px 2px rgba(148,148,148,1);
-    overflow: hidden;
-}
-
 #homeTestimonies > p {
     border-radius: 3px;
     position: relative; /*  <--- */
     font-style: italic;
     text-align: center;
     padding: 0.3rem 1.2rem;
-    width: 90%; /* create space for the quotes */
     color: #4a4a4a;
     margin: 1rem auto 2rem;
     color: #4a4a4a;
     background: #E8E8E8;
-    font-size: 15px;
 }
     /* -- create the quotation marks -- */
     #homeTestimonies > p:before,
@@ -81,10 +50,11 @@
     border-color: #872c58;
     color: #fff;
     text-decoration: none;
-    width: 60%;
+    width: 30%;
     margin-top: 0px;
     margin-right: auto;
     margin-left: auto;
+    padding: 13px 19px;
 }
 .fPCarouselCaption h3,
 .carousel .icon-container,
@@ -136,23 +106,22 @@
     display: flex;
     display: -ms-flex;
     display: -webkit-flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
 }
-.homeColumn {
-    display: table-cell;
-    width: 100%;
-}
-.homeSide{
+.homeColumn > p {
+    font-size: 1.1vw;
     width: 60%;
-    height:75%;
+    margin: 1em auto 1em;
 }
-.homeSideColumns {
+.homeColumn {
     overflow: hidden;
-    display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: url(/Content/images/background/cream_dust.png) repeat 0 0;
+    word-break: break-word;
 }
 .showMore{
     margin-bottom: 3%;
@@ -160,23 +129,6 @@
 .carousel-inner {
 max-height: 100%;
 }
-@media screen and (max-width: 992px) {
-    .homeRow {
-        flex-direction: column;
-    }
-        .homeRow > div.homeColumn:nth-child(1) {
-            order: 2;
-        }
-
-        .homeRow > div.homeColumn:nth-child(2) {
-            order: 1;
-        }
-
-        .homeRow > div.homeColumn:nth-child(3) {
-            order: 3;
-        }
-    .homeColumn{
-        margin-top:2%;
-        width:100%;
-    }
+.container{
+    padding:0px;
 }
