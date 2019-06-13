@@ -17,7 +17,6 @@ namespace StreetEats.Controllers
             string[] logoFile = Directory.GetFiles(Server.MapPath("~/Content/Images/logo"));
             string hireUsTitle = System.Configuration.ConfigurationManager.AppSettings["hireUsTitle"].ToString();
             string [] hireUsText = System.Configuration.ConfigurationManager.AppSettings["hireUsText"].Split('|').ToArray();
-            string wannaKnowMoreTitle = System.Configuration.ConfigurationManager.AppSettings["wannaKnowMoreTitle"].ToString();
             string homeThirdColumn = System.Configuration.ConfigurationManager.AppSettings["homeThirdColumn"].ToString();
             string[] testimonyText = System.Configuration.ConfigurationManager.AppSettings["testimonyText"].Split('|').ToArray();
 
@@ -37,7 +36,6 @@ namespace StreetEats.Controllers
                 logoFilePath = logoFilePath,
                 hireUsTitle = hireUsTitle,
                 hireUsText = hireUsText,
-                wannaKnowMoreTitle = wannaKnowMoreTitle,
                 homeThirdColumn = homeThirdColumn,
                 testimonyText = testimonyText
             };

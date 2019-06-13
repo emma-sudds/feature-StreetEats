@@ -6,7 +6,7 @@
 }
 @Styles.Render("~/bundle/css/home")
 <div class="homeRow">
-    <div class="homeMiddle homeColumn">
+    <div class="homeFirst homeColumn">
         <div id="indexCarousel">
             <!-- carousel code -->
             <div id="carouselExampleIndicators" class="carousel slide" data-interval="6000">
@@ -70,21 +70,25 @@
 
         </div>
     </div>
-    <div class="homeColumn homeSide">
-        <h3>@Model.hireUsTitle</h3>
-        @foreach (var item in Model.hireUsText)
-        {
-            <p>@item</p>
-        }
-        <h3>@Model.wannaKnowMoreTitle</h3>
-        <button class="btn btn-primary btn-lg showMore" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("About Us", "Index", "About", null, new { id = "aboutLink" }) </button>
+    <div class="homeMiddle homeColumn">
+        <div class="middle">
+            <h3>@Model.hireUsTitle</h3>
+            @foreach (var item in Model.hireUsText)
+            {
+                <p>@item</p>
+            }
+            <button class="btn btn-primary btn-lg showMore" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("Get to know us", "Index", "About", null, new { id = "aboutLink" }) </button>
+        </div>
+        <div class="middle">
+            @*<img src="~/Content/images/home/homeMiddle.jpg" />*@
+        </div>
     </div>
-    <div class="homeColumn homeSide" id="homeTestimonies">
+    <div class="homeLast homeColumn" id="homeTestimonies">
             <h3>@Model.homeThirdColumn</h3>
 
             @foreach (var item in Model.testimonyText)
             {
-                <p>@item</p>
+                <p>"@item"</p>
             }
             <button class="btn btn-primary btn-lg showMore" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("Read More", "Index", "testimonies", null, new { id = "testimoniesLink" }) </button>
     </div>
