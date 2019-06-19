@@ -1,17 +1,29 @@
 ﻿.firstSlide {
     background: url('/Content/images/slides/wedding.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width:100%;
+    height:100%;
 }
 
 .secondSlide {
-    background: url('/Content/images/slides/corporate.png');
+    background: url('/Content/images/slides/corporate.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
 }
 
 .thirdSlide {
     background: url('/Content/images/slides/market.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
 }
 #aboutLink, #aboutUsButton, #testimoniesLink {
     background-color: #a2356a;
@@ -102,10 +114,12 @@ h3 {
     font-weight: bold
 }
 .homeMiddle {
-    background-color: #e09fbe;
+    background: rgb(224,159,190);
+    background: linear-gradient(202deg, rgba(224,159,190,1) 35%, rgba(253,251,206,1) 100%);
 }
 .homeLast {
-    background-color: #fdfbce;
+    background: rgb(253,251,206);
+    background: linear-gradient(202deg, rgba(253,251,206,1) 35%, rgba(224,159,190,1) 100%);
 }
 .homeColumn > p, .homeColumn > div > p {
     font-size: calc(1em + 0.5vw)
@@ -114,4 +128,51 @@ button{
     font-size:inherit;
 }
 .middle {
+}
+.hireUsRow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+.hireUsColumn {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+    .hireUsColumn img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .hireUsColumn {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .hireUsColumn {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+.imageColumn{
+    padding: 0 4px;
+}
+.mainHireUsRow{
+    margin: 2% 16% 2% 16%;
+}
+.hireUsButton{
+    margin-top: 1.7%;
+    margin-bottom: 1.7%;
 }

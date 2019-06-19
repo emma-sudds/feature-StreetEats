@@ -72,25 +72,60 @@
     </div>
     <div class="homeMiddle homeColumn">
         <div class="middle">
-            <h3>@Model.hireUsTitle</h3>
-            @foreach (var item in Model.hireUsText)
-            {
-                <p>@item</p>
-            }
-            <button class="btn btn-primary btn-lg showMore" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("Get to know us", "Index", "About", null, new { id = "aboutLink" }) </button>
+            <div class="hireUsRow mainHireUsRow">
+                <div class="hireUsColumn">
+                    <h3>@Model.hireUsTitle</h3>
+                    @foreach (var item in Model.hireUsText)
+                    {
+                        @item
+                    }
+
+                    <div class="hireUsButton">
+                        <button class="btn btn-primary btn-lg showMore" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("Get to know us", "Index", "About", null, new { id = "aboutLink" }) </button>
+                    </div>
+                </div>
+                <div class="hireUsColumn">
+                    <div class=hireUsRow>
+                        <div class="hireUsColumn imageColumn">
+                            <img src="~/Content/images/home/homeMiddle.jpg" style="width:100%"/>
+                        </div>
+                        <div class="hireUsColumn imageColumn">
+                            <img src="~/Content/images/home/homeMiddle2.jpg" style="width:100%" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="middle">
-            @*<img src="~/Content/images/home/homeMiddle.jpg" />*@
         </div>
     </div>
-    <div class="homeLast homeColumn" id="homeTestimonies">
+<div class="homeLast homeColumn" id="homeTestimonies">
+
+    <div class="hireUsRow mainHireUsRow">
+
+        <div class="hireUsColumn">
             <h3>@Model.homeThirdColumn</h3>
 
             @foreach (var item in Model.testimonyText)
             {
                 <p>"@item"</p>
             }
-            <button class="btn btn-primary btn-lg showMore" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("Read More", "Index", "testimonies", null, new { id = "testimoniesLink" }) </button>
+
+            <div class="hireUsButton">
+                <button class="btn btn-primary btn-lg showMore" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("Read More", "Index", "testimonies", null, new { id = "testimoniesLink" }) </button>
+            </div>
+        </div>
+
+        <div class="hireUsColumn">
+            <div class=hireUsRow>
+                <div class="hireUsColumn imageColumn">
+                    <img src="~/Content/images/home/homeLast.jpg" style="width:100%" />
+                </div>
+                <div class="hireUsColumn imageColumn">
+                    <img src="~/Content/images/home/homeLast2.jpg" style="width:100%" />
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 @*<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
