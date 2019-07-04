@@ -77,20 +77,21 @@
                     <h3>@Model.hireUsTitle</h3>
                     @foreach (var item in Model.hireUsText)
                     {
-                        @item
+                        <p>@item</p>
                     }
 
-                    <div class="hireUsButton">
-                        <button class="btn btn-primary btn-lg showMore" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("Get to know us", "Index", "About", null, new { id = "aboutLink" }) </button>
-                    </div>
                 </div>
                 <div class="hireUsColumn">
                     <div class=hireUsRow>
                         <div class="hireUsColumn imageColumn">
-                            <img src="~/Content/images/home/homeMiddle.jpg" style="width:100%"/>
+                            <img src="~/Content/images/home/homeMiddle.jpg" style="width:100%" />
                         </div>
                         <div class="hireUsColumn imageColumn">
                             <img src="~/Content/images/home/homeMiddle2.jpg" style="width:100%" />
+                        </div>
+
+                        <div class="hireUsButton">
+                            <button class="btn btn-primary btn-lg showMore" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("Get to know us", "Index", "About", null, new { id = "aboutLink" }) </button>
                         </div>
                     </div>
                 </div>
@@ -110,9 +111,6 @@
                 <p>"@item"</p>
             }
 
-            <div class="hireUsButton">
-                <button class="btn btn-primary btn-lg showMore" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("Read More", "Index", "testimonies", null, new { id = "testimoniesLink" }) </button>
-            </div>
         </div>
 
         <div class="hireUsColumn">
@@ -122,6 +120,11 @@
                 </div>
                 <div class="hireUsColumn imageColumn">
                     <img src="~/Content/images/home/homeLast2.jpg" style="width:100%" />
+                </div>
+            </div>
+            <div class="hireUsRow">
+                <div class="hireUsButton">
+                    <button class="btn btn-primary btn-lg showMore" data-animation="animated zoomInUp" id="aboutUsButton">@Html.ActionLink("Read More", "Index", "testimonies", null, new { id = "testimoniesLink" }) </button>
                 </div>
             </div>
         </div>
